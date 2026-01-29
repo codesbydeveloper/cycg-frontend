@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Views | Workforce Development | CYCG</title>
+    <link href="./output.css" rel="stylesheet">
+    <style>
+        /* Custom grid breakpoints for views cards:
+           - 1 column below 931px (mobile)
+           - 2 columns from 931px up to 1319px (tablet)
+           - 3 columns at 1320px and above (desktop) */
+        @media (max-width: 930px) {
+            .views-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (min-width: 931px) and (max-width: 1319px) {
+            .views-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (min-width: 1320px) {
+            .views-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-[#000000]">
+
+    <header class="fixed top-0 left-0 w-full z-50">
+        <div
+            class="absolute z-0 top-0 left-0 w-full h-[128px] z-10 bg-[linear-gradient(180deg,#080808_0%,rgba(8,8,8,0.5)_50%,rgba(8,8,8,0)_100%)]">
+        </div>
+        <div class="z-50 max-w-[1920px] mx-auto py-6 px-20    flex items-center justify-between text-white">
+            <nav class="z-50 hidden md:flex gap-12 uppercase text-sm tracking-wide ">
+                <a href="#" class="link-underline typo-header link-underline-active">Home</a>
+                <a href="#" class="link-underline typo-header">About Us</a>
+                <a href="#" class="link-underline typo-header">Services</a>
+                <a href="#" class="link-underline typo-header">Views</a>
+            </nav>
+            <img src="./assets/svg/logo.svg" alt="CYCG" class="z-50 h-12 mr-20" />
+            <div class="flex items-center gap-4 text-[#EBEBEB]">
+
+                <span class="z-50 uppercase text-md text-[rgba(235, 235, 235, 1)]">
+                    Connect with us
+                </span>
+
+                <div class="z-50 flex items-center gap-3">
+                    <img src="./assets/svg/linkedin.svg" alt="linkedin" class="w-8 h-8 cursor-poniter">
+                    <img src="./assets/svg/insta.svg" alt="instagram" class="w-8 h-8 cursor-poniter">
+                    <img src="./assets/svg/mail.svg" alt="email" class="w-8 h-8 cursor-poniter">
+                </div>
+            </div>
+    </header>
+    <div class="fixed bottom-4 right-4  rounded-full flex items-center justify-center  bg-[#080808]">
+        <img src="./assets/svg/chat.svg" alt="chat icon" class="ml-2 mt-2 h-12">
+    </div>
+
+    <main class="min-h-screen pt-[128px] pb-[120px] px-6 flex flex-col items-center">
+        <div class="w-[1320px] max-w-full mx-auto">
+            <!-- Section header -->
+            <h2
+                class="font-kiona font-normal uppercase text-[32px] sm:text-[40px] md:text-[40px] leading-[90%] tracking-normal text-white mb-12">
+                <span class="relative z-10 fx-word-2">Workforce</span> <span class="pl-20px">Development</span>
+            </h2>
+
+            <!-- Card grid: custom breakpoints (<=930px 1 col, 931px–1319px 2 cols, >=1320px 3 cols) -->
+            <div class="grid gap-6 mb-24 justify-items-center xl:justify-items-stretch views-grid">
+                <!-- Card 1 -->
+                <article
+                    class="w-[424px] h-[631px] bg-[#242424] rounded-[24px] overflow-hidden border border-white/10 flex flex-col shadow-lg flex-shrink-0 p-6">
+                    <div class="rounded-[16px] overflow-hidden flex-shrink-0 w-[376px] h-[303px] min-h-[303px] mb-4">
+                        <img src="./assets/img/blog img.webp" alt=""
+                            class="block w-full h-full object-cover rounded-[16px]" loading="lazy">
+                    </div>
+                    <div class="flex flex-col flex-1 min-w-0">
+                        <h3 class="text-white font-medium text-[24px] mb-3 ">Why every board needs a strategic partner:
+                            The power of board level advisories</h3>
+                        <p class="text-[#EBEBEB] text-[18px] font-normal leading-relaxed mb-4 line-clamp-3">Board today
+                            needs more than governance. They need vision. CYCG empowers direct...</p>
+                        <div class="flex justify-between items-center mt-auto pt-1">
+                            <span class="text-[#EBEBEB] text-[18px] font-normal">31st Jan 2026</span>
+                            <a href="#"
+                                class="inline-flex items-center justify-center w-[171px] h-[54px] bg-[#2E2E2E] hover:bg-[#333] text-white uppercase text-[18px] font-medium tracking-wide transition-colors">
+                                READ MORE
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Card 2 -->
+                <article
+                    class="w-[424px] h-[631px] bg-[#242424] rounded-[24px] overflow-hidden border border-white/10 flex flex-col shadow-lg flex-shrink-0 p-6">
+                    <div class="rounded-[16px] overflow-hidden flex-shrink-0 w-[376px] h-[303px] min-h-[303px] mb-4">
+                        <img src="./assets/img/blog img (1).webp" alt=""
+                            class="block w-full h-full object-cover rounded-[16px]" loading="lazy">
+                    </div>
+                    <div class="flex flex-col flex-1 min-w-0">
+                        <h3 class="text-white font-medium text-[24px] mb-3 ">Why every board needs a strategic partner:
+                            The power of board level advisories</h3>
+                        <p class="text-[#EBEBEB] text-[18px] font-normal leading-relaxed mb-4 line-clamp-3">Board today
+                            needs more than governance. They need vision. CYCG empowers direct...</p>
+                        <div class="flex justify-between items-center mt-auto pt-1">
+                            <span class="text-[#EBEBEB] text-[18px] font-normal">31st Jan 2026</span>
+                            <a href="#"
+                                class="inline-flex items-center justify-center w-[171px] h-[54px] bg-[#2E2E2E] hover:bg-[#333] text-white uppercase text-[18px] font-medium tracking-wide transition-colors">
+                                READ MORE
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Card 3 -->
+                <article
+                    class="w-[424px] h-[631px] bg-[#242424] rounded-[24px] overflow-hidden border border-white/10 flex flex-col shadow-lg flex-shrink-0 p-6">
+                    <div class="rounded-[16px] overflow-hidden flex-shrink-0 w-[376px] h-[303px] min-h-[303px] mb-4">
+                        <img src="./assets/img/blog img (2).webp" alt=""
+                            class="block w-full h-full object-cover rounded-[16px]" loading="lazy">
+                    </div>
+                    <div class="flex flex-col flex-1 min-w-0">
+                        <h3 class="text-white font-medium text-[24px] mb-3 ">Why every board needs a strategic partner:
+                            The power of board level advisories</h3>
+                        <p class="text-[#EBEBEB] text-[18px] font-normal leading-relaxed mb-4 line-clamp-3">Board today
+                            needs more than governance. They need vision. CYCG empowers direct...</p>
+                        <div class="flex justify-between items-center mt-auto pt-1">
+                            <span class="text-[#EBEBEB] text-[18px] font-normal">31st Jan 2026</span>
+                            <a href="#"
+                                class="inline-flex items-center justify-center w-[171px] h-[54px] bg-[#2E2E2E] hover:bg-[#333] text-white uppercase text-[18px] font-medium tracking-wide transition-colors">
+                                READ MORE
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Card 4 -->
+                <article
+                    class="w-[424px] h-[631px] bg-[#242424] rounded-[24px] overflow-hidden border border-white/10 flex flex-col shadow-lg flex-shrink-0 p-6">
+                    <div class="rounded-[16px] overflow-hidden flex-shrink-0 w-[376px] h-[303px] min-h-[303px] mb-4">
+                        <img src="./assets/img/blog img (3).webp" alt=""
+                            class="block w-full h-full object-cover rounded-[16px]" loading="lazy">
+                    </div>
+                    <div class="flex flex-col flex-1 min-w-0">
+                        <h3 class="text-white font-medium  text-[24px] mb-3">Why every board needs a strategic partner:
+                            The power of board level advisories</h3>
+                        <p class="text-[#EBEBEB] text-[18px] font-normal leading-relaxed mb-4 line-clamp-3">Board today
+                            needs more than governance. They need vision. CYCG empowers direct...</p>
+                        <div class="flex justify-between items-center mt-auto pt-1">
+                            <span class="text-[#EBEBEB] text-[18px] font-normal">31st Jan 2026</span>
+                            <a href="#"
+                                class="inline-flex items-center justify-center w-[171px] h-[54px] bg-[#2E2E2E] hover:bg-[#333] text-white uppercase text-[18px] font-medium tracking-wide transition-colors">
+                                READ MORE
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Card 5 -->
+                <article
+                    class="w-[424px] h-[631px] bg-[#242424] rounded-[24px] overflow-hidden border border-white/10 flex flex-col shadow-lg flex-shrink-0 p-6">
+                    <div class="rounded-[16px] overflow-hidden flex-shrink-0 w-[376px] h-[303px] min-h-[303px] mb-4">
+                        <img src="./assets/img/blog img (4).webp" alt=""
+                            class="block w-full h-full object-cover rounded-[16px]" loading="lazy">
+                    </div>
+                    <div class="flex flex-col flex-1 min-w-0">
+                        <h3 class="text-white font-medium  text-[24px] mb-3 =">Why every board needs a strategic
+                            partner: The power of board level advisories</h3>
+                        <p class="text-[#EBEBEB] text-[18px] font-normal leading-relaxed mb-4 line-clamp-3">Board today
+                            needs more than governance. They need vision. CYCG empowers direct...</p>
+                        <div class="flex justify-between items-center mt-auto pt-1">
+                            <span class="text-[#EBEBEB] text-[18px] font-normal">31st Jan 2026</span>
+                            <a href="#"
+                                class="inline-flex items-center justify-center w-[171px] h-[54px] bg-[#2E2E2E] hover:bg-[#333] text-white uppercase text-[18px] font-medium tracking-wide transition-colors">
+                                READ MORE
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Card 6 -->
+                <article
+                    class="w-[424px] h-[631px] bg-[#242424] rounded-[24px] overflow-hidden border border-white/10 flex flex-col shadow-lg flex-shrink-0 p-6">
+                    <div class="rounded-[16px] overflow-hidden flex-shrink-0 w-[376px] h-[303px] min-h-[303px] mb-4">
+                        <img src="./assets/img/blog img (5).webp" alt=""
+                            class="block w-full h-full object-cover rounded-[16px]" loading="lazy">
+                    </div>
+                    <div class="flex flex-col flex-1 min-w-0">
+                        <h3 class="text-white font-medium  text-[24px] mb-3 ">Why every board needs a strategic partner:
+                            The power of board level advisories</h3>
+                        <p class="text-[#EBEBEB] text-[18px] font-normal leading-relaxed mb-4 line-clamp-3">Board today
+                            needs more than governance. They need vision. CYCG empowers direct...</p>
+                        <div class="flex justify-between items-center mt-auto pt-1">
+                            <span class="text-[#EBEBEB] text-[18px] font-normal">31st Jan 2026</span>
+                            <a href="#"
+                                class="inline-flex items-center justify-center w-[171px] h-[54px] bg-[#2E2E2E] hover:bg-[#333] text-white uppercase text-[18px] font-medium tracking-wide transition-colors">
+                                READ MORE
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Card 7 -->
+                <article
+                    class="w-[424px] h-[631px] bg-[#242424] rounded-[24px] overflow-hidden border border-white/10 flex flex-col shadow-lg flex-shrink-0 p-6">
+                    <div class="rounded-[16px] overflow-hidden flex-shrink-0 w-[376px] h-[303px] min-h-[303px] mb-4">
+                        <img src="./assets/img/blog img (6).webp" alt=""
+                            class="block w-full h-full object-cover rounded-[16px]" loading="lazy">
+                    </div>
+                    <div class="flex flex-col flex-1 min-w-0">
+                        <h3 class="text-white font-medium  text-[24px] mb-3 ">Why every board needs a strategic partner:
+                            The power of board level advisories</h3>
+                        <p class="text-[#EBEBEB] text-[18px] font-normal leading-relaxed mb-4 line-clamp-3">Board today
+                            needs more than governance. They need vision. CYCG empowers direct...</p>
+                        <div class="flex justify-between items-center mt-auto pt-1">
+                            <span class="text-[#EBEBEB] text-[18px] font-normal">31st Jan 2026</span>
+                            <a href="#"
+                                class="inline-flex items-center justify-center w-[171px] h-[54px] bg-[#2E2E2E] hover:bg-[#333] text-white uppercase text-[18px] font-medium tracking-wide transition-colors">
+                                READ MORE
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Card 8 -->
+                <article
+                    class="w-[424px] h-[631px] bg-[#242424] rounded-[24px] overflow-hidden border border-white/10 flex flex-col shadow-lg flex-shrink-0 p-6">
+                    <div class="rounded-[16px] overflow-hidden flex-shrink-0 w-[376px] h-[303px] min-h-[303px] mb-4">
+                        <img src="./assets/img/blog img (7).webp" alt=""
+                            class="block w-full h-full object-cover rounded-[16px]" loading="lazy">
+                    </div>
+                    <div class="flex flex-col flex-1 min-w-0">
+                        <h3 class="text-white font-medium  text-[24px] mb-3 ">Why every board needs a strategic partner:
+                            The power of board level advisories</h3>
+                        <p class="text-[#EBEBEB] text-[18px] font-normal leading-relaxed mb-4 line-clamp-3">Board today
+                            needs more than governance. They need vision. CYCG empowers direct...</p>
+                        <div class="flex justify-between items-center mt-auto pt-1">
+                            <span class="text-[#EBEBEB] text-[18px] font-normal">31st Jan 2026</span>
+                            <a href="#"
+                                class="inline-flex items-center justify-center w-[171px] h-[54px] bg-[#2E2E2E] hover:bg-[#333] text-white uppercase text-[18px] font-medium tracking-wide transition-colors">
+                                READ MORE
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Card 9 -->
+                <article
+                    class="w-[424px] h-[631px] bg-[#242424] rounded-[24px] overflow-hidden border border-white/10 flex flex-col shadow-lg flex-shrink-0 p-6">
+                    <div class="rounded-[16px] overflow-hidden flex-shrink-0 w-[376px] h-[303px] min-h-[303px] mb-4">
+                        <img src="./assets/img/blog img (8).webp" alt=""
+                            class="block w-full h-full object-cover rounded-[16px]" loading="lazy">
+                    </div>
+                    <div class="flex flex-col flex-1 min-w-0">
+                        <h3 class="text-white font-medium  text-[24px] mb-3 ">Why every board needs a strategic partner:
+                            The power of board level advisories</h3>
+                        <p class="text-[#EBEBEB] text-[18px] font-normal leading-relaxed mb-4 line-clamp-3">Board today
+                            needs more than governance. They need vision. CYCG empowers direct...</p>
+                        <div class="flex justify-between items-center mt-auto pt-1">
+                            <span class="text-[#EBEBEB] text-[18px] font-normal">31st Jan 2026</span>
+                            <a href="#"
+                                class="inline-flex items-center justify-center w-[171px] h-[54px] bg-[#2E2E2E] hover:bg-[#333] text-white uppercase text-[18px] font-medium tracking-wide transition-colors">
+                                READ MORE
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- LOAD MORE button -->
+            <div class="flex justify-center">
+                <button type="button"
+                    class="w-[206px] h-[61px] bg-[#EBEBEB] text-[#2E2E2E] hover:bg-[#d9d9d9] uppercase text-[24px] font-medium tracking-wide transition-colors">
+                    LOAD MORE
+                </button>
+            </div>
+            <div class="w-full flex justify-center px-4 xl:px-0 mt-32">
+                <div
+                    class="w-full max-w-[68.75%] mx-auto xl:h-[397px] h-auto rounded-[24px] overflow-hidden flex flex-col xl:flex-row shadow-[0_40px_56px_0_#00000052,-24px_-20px_64px_0_#FFFFFF1A]">
+
+                    <div
+                        class="w-full xl:w-1/2 h-full flex flex-col justify-center bg-[#ffffff] px-6 xl:px-12 py-6 xl:py-8 text-left">
+                        <h2
+                            class="font-kiona font-[700] text-[24px] sm:text-[32px] xl:text-[40px] leading-[110%] tracking-[0] uppercase text-[#2E2E2E] align-middle mb-4">
+                            Schedule a consultation today
+                        </h2>
+                        <p
+                            class="text-[13px] xl:text-[24px] font-[500] leading-relaxed text-[#2E2E2E] mb-8 max-w-[620px]">
+                            Where enterprise expertise, results-driven solutions, and future-ready strategies converge
+                            for your success.
+                        </p>
+                        <button
+                            class="inline-flex items-center justify-center w-full max-w-[328px] h-[61px] bg-[#2E2E2E] text-white text-[13px] xl:text-[24px] font-semibold tracking-wide whitespace-nowrap mx-auto xl:mx-0">
+                            SCHEDULE CALL NOW
+                        </button>
+                    </div>
+
+                    <!-- Right image with soft left-to-right linear fade -->
+                    <div class="relative w-full xl:w-1/2 h-[240px] xl:h-full">
+                        <img src="./assets/img/laptop.webp" alt="Laptop"
+                            class="absolute inset-0 w-full h-full object-cover">
+                        <div
+                            class="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,1)_0%,rgba(255,255,255,0)_25%)]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-0 md:pb-12 bg-[#000000]">
+        <div class="max-w-[68.75%] mx-auto px-0 md:px-6 text-center text-white">
+            <div class="flex flex-col md:flex-row rounded-[24px] border-2 border-[#2E2E2E]">
+                <div
+                    class="flex flex-col gap-4 p-4 py-8 border-r border-[#2E2E2E] border-b-2 md:border-b-[0px] tracking-wide w-full md:w-1/4 flex justify-center items-center">
+                    <img src="./assets/svg/logo.svg" alt="company logo">
+                    <div class="flex items-center justify-center">
+                        <p class="text-sm mr-4 text-inter font-[400]">subsidiary of</p>
+                        <img src="./assets/img/fyghtclub.webp" class="h-10" alt="fyght-club-logo">
+                    </div>
+                </div>
+                <div class="flex w-full md:w-3/4 flex-col text-[#EBEBEB]">
+                    <div
+                        class="py-4 md:py-8 border-b-2 border-[#2E2E2E] text-sm md:text-lg text-[rgba(235, 235, 235, 1)] flex text-center justify-center gap-3 md:gap-4">
+                        <a href="./index.html" class="text-[#EBEBEB] hover:underline">Home</a>
+                        <a href="#" class="text-[#EBEBEB] hover:underline">About Us</a>
+                        <a href="#" class="text-[#EBEBEB] hover:underline">Services</a>
+                        <a href="./views.html" class="text-[#EBEBEB] hover:underline">Views</a>
+                        <a href="./privacy.html" class="text-[#EBEBEB] hover:underline">Privacy Policy</a>
+                    </div>
+                    <div class="my-3 md:py-8 flex items-center gap-4 text-[#EBEBEB] justify-center">
+                        <span class="z-50 uppercase text-sm md:text-lg text-[rgba(235, 235, 235, 1)]">
+                            Connect with us
+                        </span>
+                        <div class="z-50 flex items-center gap-3">
+                            <img src="./assets/svg/linkedin.svg" alt="linkedin" class="w-8 h-8 cursor-pointer">
+                            <img src="./assets/svg/insta.svg" alt="instagram" class="w-8 h-8 cursor-pointer">
+                            <img src="./assets/svg/mail.svg" alt="email" class="w-8 h-8 cursor-pointer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-sm text-white mt-4">© 2025 CYCG | All Right Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
