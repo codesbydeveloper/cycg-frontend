@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYCG | Business Consulting & Strategy Services</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <header class="fixed top-0 left-0 w-full z-50">
+        <div
+            class="absolute z-0 top-0 left-0 w-full h-[128px] z-10 bg-[linear-gradient(180deg,#080808_0%,rgba(8,8,8,0.5)_50%,rgba(8,8,8,0)_100%)]">
+        </div>
+        <div class="z-50 max-w-[1920px] mx-auto py-6 px-4 lg:px-20 flex items-center justify-between text-white">
+            <nav class="z-50 hidden lg:flex gap-12 uppercase text-sm tracking-wide ">
+                <a href="#" class="link-underline text-[19px] link-underline-active">Home</a>
+                <a href="#" class="link-underline text-[19px]">About Us</a>
+                <a href="#" class="link-underline text-[19px]">Services</a>
+                <a href="#" class="link-underline text-[19px]">Views</a>
+            </nav>
+            <img src="./assets/svg/logo.svg" alt="CYCG" class="z-50 h-12 lg:h-16 lg:mr-20" />
+            <div class="hidden lg:flex items-center gap-4 text-[#EBEBEB]">
+                <span class="z-50 uppercase text-[19px] text-[rgba(235, 235, 235, 1)]">
+                    Connect with us
+                </span>
+                <div class="z-50 flex items-center gap-3">
+                    <img src="./assets/svg/linkedin.svg" alt="linkedin" class="w-8 h-8 cursor-poniter">
+                    <img src="./assets/svg/insta.svg" alt="instagram" class="w-8 h-8 cursor-poniter">
+                    <img src="./assets/svg/mail.svg" alt="email" class="w-8 h-8 cursor-poniter">
+                </div>
+            </div>
+            <button id="mobile-menu-btn" class="lg:hidden z-50 flex flex-col gap-1.5 w-8 h-8 justify-center items-center cursor-pointer" aria-label="Toggle menu">
+                <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+                <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+                <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+            </button>
+        </div>
+        <div id="mobile-menu" class="fixed inset-0 z-[100] bg-[#080808] transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
+            <div class="relative w-full h-full">
+                <button id="mobile-menu-close" class="absolute top-6 right-4 z-[101] w-8 h-8 flex items-center justify-center cursor-pointer" aria-label="Close menu">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <nav class="flex flex-col items-center justify-center h-full gap-8">
+                    <a href="#" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Home</a>
+                    <a href="#" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">About Us</a>
+                    <a href="#" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Services</a>
+                    <a href="#" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Views</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="fixed bottom-4 right-4 z-[9999] rounded-full flex items-center justify-center bg-[#1E1E1E]/20 backdrop-blur-sm ">
+        <img src="./assets/svg/chat.svg" alt="chat icon" class="ml-2 mt-2 h-14 md:h-16 "> 
+    </div>
+    <section
+        class="relative h-[370px]  bg-[url('./assets/img/about.png')] bg-top bg-cover bg-no-repeat>
+        <div class="absolute inset-0 z-0"></div>
+        <div class="relative z-20 h-full max-w-[1920px] px-4 md:px-6 lg:px-12 flex items-end pb-8 md:pb-24 lg:pb-20 mx-auto ml-[210px]">
+            <h1
+            class="z-40 font-kiona text-white text-2xl text-[8vh] mt-auto md:text-[10.2vh] md:mt-28">
+            ABOUT US<br />
+            </h1>
+        </div>
+    </section>
+    
+</body>
+
+</html>
