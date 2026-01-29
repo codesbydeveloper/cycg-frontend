@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'Kiona';
-    src: url('./font/Kiona-Regular.ttf') format('truetype');
+    src: url('./font/Kiona-SemiBold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
@@ -121,4 +121,23 @@
   mask-composite: exclude;
   pointer-events: none;
   z-index: 1;
+}
+
+/* Mobile Menu Styles */
+.mobile-nav-link {
+  position: relative;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+
+.mobile-nav-link:hover {
+  opacity: 0.8;
+}
+
+#mobile-menu-btn span {
+  transition: all 0.3s ease;
+}
+
+#mobile-menu {
+  backdrop-filter: blur(0);
 }
