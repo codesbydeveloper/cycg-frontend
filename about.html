@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYCG | About Us</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="min-h-screen page-gradient-dark-to-light">
+
+    <header class="fixed top-0 left-0 w-full z-50">
+        <div
+            class="absolute z-0 top-0 left-0 w-full h-[128px] z-10 bg-[linear-gradient(180deg,#080808_0%,rgba(8,8,8,0.5)_50%,rgba(8,8,8,0)_100%)]">
+        </div>
+        <div class="z-50 max-w-[1920px] mx-auto py-6 px-4 lg:px-20 flex items-center justify-between text-white">
+            <nav class="z-50 hidden lg:flex gap-12 uppercase text-sm tracking-wide ">
+                <a href="#" class="link-underline text-[19px] link-underline-active">Home</a>
+                <a href="#" class="link-underline text-[19px]">About Us</a>
+                <a href="#" class="link-underline text-[19px]">Services</a>
+                <a href="#" class="link-underline text-[19px]">Views</a>
+            </nav>
+            <img src="./assets/svg/logo.svg" alt="CYCG" class="z-50 h-12 lg:h-16 lg:mr-20" />
+            <div class="hidden lg:flex items-center gap-4 text-[#EBEBEB]">
+                <span class="z-50 uppercase text-[19px] text-[rgba(235, 235, 235, 1)]">
+                    Connect with us
+                </span>
+                <div class="z-50 flex items-center gap-3">
+                    <img src="./assets/svg/linkedin.svg" alt="linkedin" class="w-8 h-8 cursor-poniter">
+                    <img src="./assets/svg/insta.svg" alt="instagram" class="w-8 h-8 cursor-poniter">
+                    <img src="./assets/svg/mail.svg" alt="email" class="w-8 h-8 cursor-poniter">
+                </div>
+            </div>
+            <button id="mobile-menu-btn" class="lg:hidden z-50 flex flex-col gap-1.5 w-8 h-8 justify-center items-center cursor-pointer" aria-label="Toggle menu">
+                <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+                <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+                <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+            </button>
+        </div>
+        <div id="mobile-menu" class="fixed inset-0 z-[100] bg-[#080808] transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
+            <div class="relative w-full h-full">
+                <button id="mobile-menu-close" class="absolute top-6 right-4 z-[101] w-8 h-8 flex items-center justify-center cursor-pointer" aria-label="Close menu">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <nav class="flex flex-col items-center justify-center h-full gap-8">
+                    <a href="#" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Home</a>
+                    <a href="#" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">About Us</a>
+                    <a href="#" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Services</a>
+                    <a href="#" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Views</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div
+        class="fixed bottom-4 right-4 z-[9999] rounded-full flex items-center justify-center bg-[#1E1E1E]/20 backdrop-blur-sm">
+        <img src="./assets/svg/chat.svg" alt="chat icon" class="ml-2 mt-2 h-12">
+    </div>
+
+    <main>
+        <section
+            class="relative h-[500px] bg-[url('./assets/svg/about.svg')] bg-top bg-cover bg-no-repeat overflow-hidden">
+            <div class="relative z-20 max-w-full min-[1715px]:max-w-[68.75%] mx-auto px-6 flex flex-col justify-end pb-7 md:pb-24 h-full">
+                <h1
+                    class="font-kiona font-normal uppercase text-[56px] lg:text-[100px] leading-[90%] tracking-[0] text-white">
+                    About Us
+                </h1>
+            </div>
+        </section>
+
+        <section class="relative z-10 bg-[#000000] py-12 md:py-16 lg:py-24">
+            <div class="max-w-full min-[1715px]:max-w-[68.75%] mx-auto flex flex-col lg:flex-row gap-8 lg:gap-24 items-center">
+                <div class="flex-1 lg:max-w-[65%] px-6">
+                    <p class="text-[#EBEBEB] text-[15px] font-weight-400 md:text-[24px] leading-[140%] mb-6">
+                        At CYCG, we understand that today’s business environment demands clarity, speed, and adaptability. We help organizations not only navigate complexity but also unlock performance and achieve sustainable growth.
+                    </p>
+                    <p class="text-[#EBEBEB] text-[15px] font-weight-400 md:text-[24px] leading-[140%]">
+                        Our mission is simple: deliver insights and tailored solutions that empower leaders, strengthen organizations, and create lasting impact. By combining strategic expertise with a practical, hands-on approach, we ensure that strategies translate into action—and action delivers measurable results.
+                </div>
+                <div class="w-full lg:w-auto flex-shrink-0 flex justify-center lg:justify-end relative z-10">
+                    <img
+                        src="./assets/svg/group.svg"
+                        alt="CYCG team collaborating"
+                        class="relative z-10 w-full max-w-[450px] h-auto rounded-[27px] object-cover lg:w-[450px] lg:h-[480px] lg:max-w-none">
+                </div>
+            </div>
+        </section>
+
+        <!-- WHAT WE DO - same pattern as services page card section, pattern top right -->
+        <section class="relative px-6 pb-[100px] pt-[150px] overflow-hidden bg-layout">
+            <!-- Decorative pattern at top right corner (same as service page) -->
+            <img src="./assets/img/ptrn.webp" alt="" aria-hidden="true"
+                class="pointer-events-none select-none absolute top-0 right-0 w-[560px] h-auto object-cover object-top z-10">
+            <div class="w-full max-w-full min-[1715px]:max-w-[68.75%] mx-auto relative z-10">
+                <!-- Heading with line -->
+                <div class="flex flex-wrap items-center gap-4 mb-6">
+                    <h2 class="font-kiona font-normal uppercase text-[32px] leading-[90%] sm:text-[40px] md:text-[56px] tracking-normal text-white">
+                        <span class="relative z-10 fx-word-2 font-kiona">What We Do</span> 
+                    </h2>
+                  
+                </div>
+                <p class="text-[#EBEBEB] text-[15px] md:text-[24px] leading-[140%] mb-10">
+                    CYCG provides a suite of services designed to address immediate priorities while building long-term resilience:
+                </p>
+                <!-- Service list: title (left) | icon (center) | description (right) – centered on all screen sizes -->
+                <div class="flex flex-col gap-9 max-w-full mx-auto">
+                    <!-- 1. Workforce Development - highlighted with gradient border -->
+                    <div class="border-gradient-card rounded-xl px-6 md:px-10 py-6 md:py-8 relative overflow-hidden mx-auto w-full max-w-full" style="box-shadow: inset 0 -8px 8px rgba(0, 0, 0, 0.32);">
+                        <div class="relative z-10 grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-8 md:gap-20 items-center justify-items-center md:justify-items-stretch">
+                            <h3 class="font-inter font-bold text-[#EBEBEB] text-[32px] text-center md:text-left leading-[1.35] line-clamp-2 w-full md:w-auto">Workforce<br>Development</h3>
+                            <div class="flex justify-center order-first md:order-none w-full md:w-auto">
+                                <img src="./assets/img/card-icon-3.webp" alt="" class="relative z-10 w-14 h-14 md:w-[100px] md:h-[100px] flex-shrink-0 opacity-90" aria-hidden="true">
+                            </div>
+                            <p class="font-inter font-medium text-[#EBEBEB] text-[20px] leading-[1.5] text-center md:text-left max-w-[300px] md:max-w-[320px] md:ml-auto line-clamp-2 w-full md:w-auto">Equipping talent with skills, tools, and resilience.</p>
+                        </div>
+                    </div>
+                    <!-- 2. Project Management -->
+                    <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-6 md:gap-16 items-center justify-items-center md:justify-items-stretch px-6 md:px-10 py-6 md:py-8 mx-auto w-full max-w-full">
+                        <h3 class="font-inter font-bold text-[#EBEBEB] text-[32px] text-center md:text-left leading-[1.35] max-w-[280px] md:max-w-[300px] line-clamp-2 w-full md:w-auto">Project Management</h3>
+                        <div class="flex justify-center order-first md:order-none w-full md:w-auto">
+                            <img src="./assets/img/card-icon-2.webp" alt="" class="relative z-10 w-14 h-14 md:w-[100px] md:h-[100px] flex-shrink-0" aria-hidden="true">
+                        </div>
+                        <p class="font-inter font-medium text-[#EBEBEB] text-[20px] leading-[1.5] text-center md:text-right max-w-[320px] md:max-w-[340px] md:ml-auto line-clamp-2 w-full md:w-auto">Orchestrating complex initiatives with precision and measurable outcomes.</p>
+                    </div>
+                    <!-- 3. Board Advisory -->
+                    <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-6 md:gap-16 items-center justify-items-center md:justify-items-stretch px-6 md:px-10 py-6 md:py-8 mx-auto w-full max-w-full">
+                        <h3 class="font-inter font-bold text-[#EBEBEB] text-[32px] text-center md:text-left leading-[1.35] max-w-[280px] md:max-w-[300px] line-clamp-2 w-full md:w-auto">Board Advisory</h3>
+                        <div class="flex justify-center order-first md:order-none w-full md:w-auto">
+                            <img src="./assets/img/card-icon-1.webp" alt="" class="relative z-10 w-14 h-14 md:w-[100px] md:h-[100px] flex-shrink-0" aria-hidden="true">
+                        </div>
+                        <p class="font-inter font-medium text-[#EBEBEB] text-[20px] leading-[1.5] text-center md:text-right max-w-[320px] md:max-w-[340px] md:ml-auto line-clamp-2 w-full md:w-auto">Empowering boards with insight, structure, and governance for lasting success.</p>
+                    </div>
+                    <!-- 4. Enterprise Risk & Compliance -->
+                    <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-6 md:gap-16 items-center justify-items-center md:justify-items-stretch px-6 md:px-10 py-6 md:py-8 mx-auto w-full max-w-full">
+                        <h3 class="font-inter font-bold text-[#EBEBEB] text-[32px] text-center md:text-left leading-[1.35] max-w-[280px] md:max-w-[300px] line-clamp-2 w-full md:w-auto">Enterprise Risk &amp; Compliance</h3>
+                        <div class="flex justify-center order-first md:order-none w-full md:w-auto">
+                            <img src="./assets/img/card-icon-4.webp" alt="" class="relative z-10 w-14 h-14 md:w-[100px] md:h-[100px] flex-shrink-0" aria-hidden="true">
+                        </div>
+                        <p class="font-inter font-medium text-[#EBEBEB] text-[20px] leading-[1.5] text-center md:text-right max-w-[320px] md:max-w-[340px] md:ml-auto line-clamp-2 w-full md:w-auto">Safeguarding enterprise value through risk frameworks and compliance.</p>
+                    </div>
+                    <!-- 5. Organizational & Functional Strategy -->
+                    <div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-6 md:gap-16 items-center justify-items-center md:justify-items-stretch px-6 md:px-10 py-6 md:py-8 mx-auto w-full max-w-full">
+                        <h3 class="font-inter font-bold text-[#EBEBEB] text-[32px] text-center md:text-left leading-[1.35] max-w-[280px] md:max-w-[300px] line-clamp-2 w-full md:w-auto">Organizational &amp; Functional Strategy</h3>
+                        <div class="flex justify-center order-first md:order-none w-full md:w-auto">
+                            <img src="./assets/img/card-icon-5.webp" alt="" class="relative z-10 w-14 h-14 md:w-[100px] md:h-[100px] flex-shrink-0" aria-hidden="true">
+                        </div>
+                        <p class="font-inter font-medium text-[#EBEBEB] text-[20px] leading-[1.5] text-center md:text-right max-w-[320px] md:max-w-[340px] md:ml-auto line-clamp-2 w-full md:w-auto">Aligning structure, leadership, and processes for efficiency and sustainable performance.</p>
+                    </div>
+                </div>
+                <!-- Footer text -->
+                <p class="text-[#EBEBEB] text-[15px] md:text-[24px] leading-[140%] mt-10">
+                    What sets us apart is our ability to transform challenges into opportunities—partnering closely with clients so progress is not only envisioned but achieved.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-0 md:pb-12 bg-[#080808] px-6">
+        <div class="max-w-[1320px] mx-auto px-0 md:px-6 text-center text-white">
+            <div class="flex flex-col md:flex-row rounded-[24px] border-2 border-[#2E2E2E]">
+                <div class="flex flex-col gap-4 p-4 py-8 border-r border-[#2E2E2E] border-b-2 md:border-b-[0px] tracking-wide w-full md:w-1/4 flex justify-center items-center">
+                    <img src="./assets/svg/logo.svg" alt="company logo">
+                    <div class="flex items-center justify-center">
+                        <p class="text-sm mr-4 text-inter font-[400]">subsidiary of</p>
+                        <img src="./assets/img/fyghtclub.webp" class="h-10" alt="fyght-club-logo">
+                    </div>
+                </div>
+                <div class="flex w-full md:w-3/4 flex-col text-[#EBEBEB]">
+                    <div class="py-4 md:py-8 border-b-2 border-[#2E2E2E] text-xs md:text-lg text-[rgba(235, 235, 235, 1)] flex text-center justify-center gap-3 md:gap-8">
+                        <a href="index.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">Home</a>
+                        <a href="about.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">About Us</a>
+                        <a href="services.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">Services</a>
+                        <a href="views.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">Views</a>
+                        <a href="privacy.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">Privacy Policy</a>
+                    </div>
+                    <div class="my-3 md:py-8 flex items-center gap-4 text-[#EBEBEB] justify-center">
+                        <span class="z-50 uppercase text-sm md:text-lg text-[rgba(235, 235, 235, 1)]">
+                            Connect with us
+                        </span>
+                        <div class="z-50 flex items-center gap-3">
+                            <img src="./assets/svg/linkedin.svg" alt="linkedin" class="w-8 h-8 cursor-poniter">
+                            <img src="./assets/svg/insta.svg" alt="instagram" class="w-8 h-8 cursor-poniter">
+                            <img src="./assets/svg/mail.svg" alt="email" class="w-8 h-8 cursor-poniter">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-sm text-white mt-4 pb-6 md:pb-0">© 2025 CYCG  |  All Right Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        const hamburgerSpans = mobileMenuBtn.querySelectorAll('span');
+
+        function openMenu() {
+            mobileMenu.classList.remove('translate-x-full');
+            document.body.style.overflow = 'hidden';
+            hamburgerSpans[0].style.transform = 'rotate(45deg) translateY(8px)';
+            hamburgerSpans[1].style.opacity = '0';
+            hamburgerSpans[2].style.transform = 'rotate(-45deg) translateY(-8px)';
+        }
+
+        function closeMenu() {
+            mobileMenu.classList.add('translate-x-full');
+            document.body.style.overflow = '';
+            hamburgerSpans[0].style.transform = '';
+            hamburgerSpans[1].style.opacity = '';
+            hamburgerSpans[2].style.transform = '';
+        }
+
+        mobileMenuBtn.addEventListener('click', openMenu);
+        mobileMenuClose.addEventListener('click', closeMenu);
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu || e.target.closest('.mobile-nav-link')) {
+                if (e.target === mobileMenu) {
+                    closeMenu();
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

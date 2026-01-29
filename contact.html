@@ -8,39 +8,58 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 
-<body>
+<body >
     <header class="fixed top-0 left-0 w-full z-50">
         <div
             class="absolute z-0 top-0 left-0 w-full h-[128px] z-10 bg-[linear-gradient(180deg,#080808_0%,rgba(8,8,8,0.5)_50%,rgba(8,8,8,0)_100%)]">
         </div>
-        <div class="z-50 max-w-[1920px] mx-auto py-6 px-20    flex items-center justify-between text-white">
-            <nav class="z-50 hidden md:flex gap-12 uppercase text-sm tracking-wide ">
-                <a href="#" class="link-underline typo-header link-underline-active">Home</a>
-                <a href="#" class="link-underline typo-header">About Us</a>
-                <a href="#" class="link-underline typo-header">Services</a>
-                <a href="#" class="link-underline typo-header">Views</a>
+        <div class="z-50 max-w-[1920px] mx-auto py-6 px-4 lg:px-20 flex items-center justify-between text-white">
+            <nav class="z-50 hidden lg:flex gap-12 uppercase text-sm tracking-wide ">
+                <a href="#" class="link-underline text-[19px] link-underline-active">Home</a>
+                <a href="#" class="link-underline text-[19px]">About Us</a>
+                <a href="#" class="link-underline text-[19px]">Services</a>
+                <a href="#" class="link-underline text-[19px]">Views</a>
             </nav>
-            <img src="./assets/svg/logo.svg" alt="CYCG" class="z-50 h-12 mr-20" />
-            <div class="flex items-center gap-4 text-[#EBEBEB]">
-
-                <span class="z-50 uppercase text-md text-[rgba(235, 235, 235, 1)]">
+            <img src="./assets/svg/logo.svg" alt="CYCG" class="z-50 h-12 lg:h-16 lg:mr-20" />
+            <div class="hidden lg:flex items-center gap-4 text-[#EBEBEB]">
+                <span class="z-50 uppercase text-[19px] text-[rgba(235, 235, 235, 1)]">
                     Connect with us
                 </span>
-
                 <div class="z-50 flex items-center gap-3">
                     <img src="./assets/svg/linkedin.svg" alt="linkedin" class="w-8 h-8 cursor-poniter">
                     <img src="./assets/svg/insta.svg" alt="instagram" class="w-8 h-8 cursor-poniter">
                     <img src="./assets/svg/mail.svg" alt="email" class="w-8 h-8 cursor-poniter">
                 </div>
             </div>
+            <button id="mobile-menu-btn" class="lg:hidden z-50 flex flex-col gap-1.5 w-8 h-8 justify-center items-center cursor-pointer" aria-label="Toggle menu">
+                <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+                <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+                <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+            </button>
+        </div>
+        <div id="mobile-menu" class="fixed inset-0 z-[100] bg-[#080808] transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
+            <div class="relative w-full h-full">
+                <button id="mobile-menu-close" class="absolute top-6 right-4 z-[101] w-8 h-8 flex items-center justify-center cursor-pointer" aria-label="Close menu">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <nav class="flex flex-col items-center justify-center h-full gap-8">
+                    <a href="#" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Home</a>
+                    <a href="#" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">About Us</a>
+                    <a href="#" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Services</a>
+                    <a href="#" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Views</a>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main class="bg-layout min-h-screen pt-[120px]  flex flex-col items-center">
-        <div class="w-full flex justify-center px-4 xl:px-0">
+        <div class="w-full max-w-[1320px] flex justify-center px-4 xl:px-0">
             <div
-                class="w-full max-w-[68.75%] mx-auto xl:h-[397px] h-auto rounded-[24px] overflow-hidden flex flex-col xl:flex-row shadow-[0_40px_56px_0_#00000052,-24px_-20px_64px_0_#FFFFFF1A]">
+                class="w-full  mx-auto  xl:h-[397px] h-auto rounded-[24px] overflow-hidden flex flex-col xl:flex-row shadow-[0_40px_56px_0_#00000052,-24px_-20px_64px_0_#FFFFFF1A]">
                 
-                <div class="w-full xl:w-1/2 h-full flex flex-col justify-center bg-[#ffffff] px-6 xl:px-12 py-6 xl:py-8 text-left">
+                <div class="w-full  h-full flex flex-col justify-center bg-[#ffffff] px-6 xl:px-12 py-6 xl:py-8 text-left">
                     <h2
                         class="font-kiona font-[700] text-[24px] sm:text-[32px] xl:text-[40px] leading-[110%] tracking-[0] uppercase text-[#2E2E2E] align-middle mb-4">
                         Schedule a consultation today
@@ -64,9 +83,9 @@
                 </div>
             </div>
         </div>
-        <div class="w-full flex justify-center pb-[120px] bg-[#000000] mt-16 px-4 xl:px-0">
+        <div class="w-full first-letter:page-gradient-dark-to-light flex justify-center pb-[120px] bg-gradient-black-fade mt-16 px-4 xl:px-0">
             <div
-                class="w-full max-w-[68.75%] mx-auto pt-0 xl:pt-[120px] overflow-hidden flex flex-col xl:flex-row ">
+                class="w-full max-w-[1320px] mx-auto pt-0 xl:pt-[120px] overflow-hidden flex flex-col xl:flex-row ">
           
                 <div
                     class="w-full font-kiona xl:w-1/2 h-full flex flex-col justify-start px-4 xl:px-12 py-8 xl:py-10 text-left text-white">
@@ -155,15 +174,13 @@
                 </div>
             </div>
         </div>
-        <!-- Contact section matching provided design -->
+        
        
     </main>
-
-    <footer class="py-0 md:pb-12  bg-[#000000]">
-        <div class="max-w-[68.75%] mx-auto px-0 xl:px-6 text-center text-white">
+    <footer class="py-0 md:pb-12  bg-[#080808] px-6">
+        <div class="max-w-[1320px] mx-auto px-0 md:px-6 text-center text-white">
             <div class=" flex flex-col md:flex-row rounded-[24px] border-2 border-[#2E2E2E]">
-                <div
-                    class="flex flex-col gap-4 p-4 py-8 border-r  border-[#2E2E2E] border-b-2  md:border-b-[0px]  tracking-wide w-full md:w-1/4 flex justify-center items-center">
+                <div class="flex flex-col gap-4 p-4 py-8 border-r  border-[#2E2E2E] border-b-2  md:border-b-[0px]  tracking-wide w-full md:w-1/4 flex justify-center items-center">
                     <img src="./assets/svg/logo.svg" alt="company logo">
                     <div class="flex items-center justify-center">
                         <p class="text-sm mr-4 text-inter font-[400]">subsidiary of</p>
@@ -171,16 +188,15 @@
                     </div>
                 </div>
                 <div class="flex w-full md:w-3/4 flex-col  text-[#EBEBEB]">
-                    <div
-                        class="py-4 md:py-8 border-b-2 border-[#2E2E2E]   text-sm md:text-lg text-[rgba(235, 235, 235, 1)]  flex text-center justify-center gap-3 md:gap-4">
-                        <a href="./index.html" class="text-[#EBEBEB]">Home</a>
-                        <span class="text-[#EBEBEB]">About Us</span>
-                        <span class="text-[#EBEBEB]">Services</span>
-                        <span class="text-[#EBEBEB]">Views</span>
-                        <a href="./privacy.html" class="text-[#EBEBEB]">Privacy Policy</a>
+                    <div class="py-4 md:py-8 border-b-2 border-[#2E2E2E]   text-xs md:text-lg text-[rgba(235, 235, 235, 1)]  flex text-center justify-center gap-3 md:gap-8">
+                        <label for="home" class="text-[#EBEBEB] cursor-poniter">Home</label>
+                        <label for="home" class="text-[#EBEBEB] cursor-poniter">About Us</label>
+                        <label for="home" class="text-[#EBEBEB] cursor-poniter">Services</label>
+                        <label for="home" class="text-[#EBEBEB] cursor-poniter">Views</label>
+                        <label for="home" class="text-[#EBEBEB] cursor-poniter">Privacy Policy</label>
                     </div>
                     <div class="my-3 md:py-8  flex items-center gap-4 text-[#EBEBEB] justify-center ">
-
+            
                         <span class="z-50 uppercase  text-sm md:text-lg text-[rgba(235, 235, 235, 1)]">
                             Connect with us
                         </span>
@@ -191,10 +207,9 @@
                             <img src="./assets/svg/mail.svg" alt="email" class="w-8 h-8 cursor-poniter">
                         </div>
                     </div>
-
                 </div>
             </div>
-            <p class="text-sm text-white mt-4">© 2025 CYCG  |  All Right Reserved.</p>
+            <p class="text-sm text-white mt-4 pb-6 md:pb-0">© 2025 CYCG  |  All Right Reserved.</p>
         </div>
     </footer>
 </body>
