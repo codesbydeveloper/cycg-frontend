@@ -10,6 +10,13 @@
     font-style: normal;
   }
 
+@font-face {
+    font-family: 'Kiona-small';
+    src: url('./font/Kiona-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 *{
   padding: 0;
   margin: 0;
@@ -24,6 +31,13 @@
   linear-gradient(180deg, #151515 0%, #080808 100%),
   #0f0f0f;
 }
+
+.bg-layout-rev {
+  background:
+    linear-gradient(0deg, #151515 0%, #080808 100%),
+    #0f0f0f;
+}
+
 
 .link-underline {
   position: relative;
@@ -166,6 +180,11 @@
   pointer-events: none;
   z-index: 1;
 }
+@media (max-width: 549px) {
+  .border-gradient-card::before {
+    padding: 2px;
+  }
+}
 
 /* Mobile Menu Styles */
 .mobile-nav-link {
@@ -184,4 +203,18 @@
 
 #mobile-menu {
   backdrop-filter: blur(0);
+}
+
+.gradient-box {
+  width: 100%;
+  max-width: 440px;
+  aspect-ratio: 440 / 232; 
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    #000000 100%
+  );
+  opacity: 1;
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.4);
+  margin-top: 220px;
 }

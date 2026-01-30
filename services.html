@@ -16,10 +16,10 @@
         </div>
         <div class="z-50 max-w-[1920px] mx-auto py-6 px-4 lg:px-20 flex items-center justify-between text-white">
             <nav class="z-50 hidden lg:flex gap-12 uppercase text-sm tracking-wide ">
-                <a href="#" class="link-underline text-[19px] link-underline-active">Home</a>
-                <a href="#" class="link-underline text-[19px]">About Us</a>
-                <a href="#" class="link-underline text-[19px]">Services</a>
-                <a href="#" class="link-underline text-[19px]">Views</a>
+                 <a href="/index.html" class="link-underline text-[19px]">Home</a>
+                <a href="/about.html" class="link-underline text-[19px]">About Us</a>
+                <a href="/services.html" class="link-underline link-underline-active text-[19px]">Services</a>
+                <a href="/views.html" class="link-underline text-[19px]">Views</a>
             </nav>
             <img src="./assets/svg/logo.svg" alt="CYCG" class="z-50 h-12 lg:h-16 lg:mr-20" />
             <div class="hidden lg:flex items-center gap-4 text-[#EBEBEB]">
@@ -46,10 +46,10 @@
                     </svg>
                 </button>
                 <nav class="flex flex-col items-center justify-center h-full gap-8">
-                    <a href="#" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Home</a>
-                    <a href="#" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">About Us</a>
-                    <a href="#" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Services</a>
-                    <a href="#" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Views</a>
+                    <a href="/index.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Home</a>
+                    <a href="/about.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">About Us</a>
+                    <a href="/services.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Services</a>
+                    <a href="/views.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Views</a>
                 </nav>
             </div>
         </div>
@@ -63,18 +63,19 @@
     <main>
     
         <section
-            class="relative h-[500px] bg-[url('./assets/svg/service.svg')]  bg-top bg-cover bg-no-repeat overflow-hidden">
-            <div class="relative z-20  max-w-full min-[1715px]:max-w-[68.75%] mx-auto px-6 flex flex-col justify-end pb-7 md:pb-24 h-full">
+            class="relative  h-[470px]  bg-[url('./assets/img/hand-sand.webp')]  md:bg-[url('./assets/svg/service.svg')]  bg-top bg-cover bg-no-repeat overflow-hidden">
+            <div class="relative z-20  max-w-full md:max-w-[1320px] mx-auto px-6 md:px-0 flex flex-col justify-end pb-7 md:pb-24 h-full">
                 <h1
-                    class="font-kiona font-normal  uppercase text-[56px] lg:text-[100px] leading-[90%] tracking-[0] text-white">
+                    class="font-kionasmall font-normal  uppercase text-[56px] lg:text-[100px] leading-[90%] tracking-[0] text-white">
                     Services
                 </h1>
             </div>
+            <div class="gradient-box absolute bottom-0"> </div>
         </section>
 
 
         <section>
-            <div class=" max-w-full min-[1715px]:max-w-[68.75%] mx-auto px-6 pt-16 pb-[100px]">
+            <div class=" max-w-full md:max-w-[1320px] mx-auto px-6 py-10 md:px-0 md:pt-16 md:pb-[100px]">
                 <div class=" text-[#EBEBEB] text-[15px] md:text-[18px] leading-[140%]">
                     <p class="mb-4">
                         At CYCG, we know that every organization’s journey is unique. Challenges often arise at the intersection of leadership, operations, and growth, and our role is to help you navigate that complexity with clarity and purpose. Our services are designed to meet organizations where they are today and guide them toward where they need to be tomorrow—stronger, more resilient, and ready for what’s next.
@@ -89,34 +90,31 @@
             </div>
         </section>
 
-        <!-- Services cards (mirroring homepage services layout) -->
         <section class="px-0 pb-[120px] pt-[56px] overflow-hidden">
-            <div class="w-full max-w-full min-[1715px]:max-w-[68.75%] px-6 mx-auto relative z-10 font-kiona flex flex-col gap-4">
+            <div class="w-full max-w-full md:max-w-[1320px] px-6 md:px-0 mx-auto relative z-10 font-kiona flex flex-col gap-4">
               
-                <p class="text-left text-[32px] leading-[140%] font-[400] text-[#EBEBEB] mt-2">
+                <p class="text-left text-[24px] leading-[140%] font-[400] text-[#EBEBEB] mt-2">
                     Where enterprise expertise, results-driven solutions, and future-ready strategies converge for your success.
                 </p>
             </div>
             <div class=" z-10 px-6 py-12 overflow-hidden">
-                <!-- Decorative pattern ONLY behind the cards -->
                 <img src="./assets/img/ptrn.webp" alt="" aria-hidden="true"
                     class="pointer-events-none select-none absolute inset-0 w-full h-full object-cover opacity-20 z-0">
-                <!-- 2-column card layout (matches design) -->
-                <div class="w-full max-w-full min-[1715px]:max-w-[68.75%] mx-auto relative z-10 grid grid-cols-1 min-[1715px]:grid-cols-2 gap-6">
+                <div class="w-full max-w-full md:max-w-[1320px] mx-auto relative z-10 grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="card-gradient-border relative overflow-hidden md:h-[293px]" style="box-shadow: inset 0 -8px 8px rgba(0, 0, 0, 0.32); background: #232323;">
                         <img src="./assets/img/card-1.webp" alt="" aria-hidden="true"
                             class="absolute top-0 right-0 z-0 rounded-[24px]">
                         <div class="relative z-10 py-10 px-8">
-                            <div class="flex items-start justify-between">
+                            <div class="flex items-center  justify-between">
                                 <img src="./assets/img/card-icon-1.webp" alt="Board Services Icon"
-                                    class="w-[64px] h-[64px] mb-4 md:mb-6">
+                                    class="w-[64px] h-[64px] ">
                                 <span class="w-7 h-7 rounded-full border-2 bg-[#2E2E2E]/40 inline-flex items-center justify-center">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                                         <path d="M7 10l5 5 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 </span>
                             </div>
-                            <h3 class="text-[#EBEBEB] font-bold text-xl md:text-2xl mb-2 md:mb-4">Board Services</h3>
+                            <h3 class="text-[#EBEBEB] font-bold text-xl md:text-2xl mb-2 md:my-6">Board Services</h3>
                             <p class="text-[#EBEBEB] text-[22px] leading-relaxed">
                                 We empower boards with the insight, structure, and governance needed to drive lasting
                                 organizational success.
@@ -127,37 +125,36 @@
                         <img src="./assets/img/card-2.webp" alt="" aria-hidden="true"
                             class="absolute top-0 right-0 z-0 rounded-[24px]">
                         <div class="relative z-10 py-10 px-8">
-                            <div class="flex items-start justify-between">
+                            <div class="flex items-center  justify-between">
                                 <img src="./assets/img/card-icon-2.webp" alt="Project Management Icon"
-                                    class="w-[64px] h-[64px] mb-4 md:mb-6">
+                                    class="w-[64px] h-[64px] ">
                                     <span class="w-7 h-7 rounded-full border-2 bg-[#2E2E2E]/40 inline-flex items-center justify-center">
                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                                             <path d="M7 10l5 5 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
                                     </span>
                             </div>
-                            <h3 class="text-[#EBEBEB] font-bold text-xl md:text-2xl mb-2 md:mb-4">Project Management</h3>
+                            <h3 class="text-[#EBEBEB] font-bold text-xl md:text-2xl mb-2 md:my-6">Project Management</h3>
                             <p class="text-[#EBEBEB] text-[22px] leading-relaxed">
                                 We orchestrate complex initiatives with precision, ensuring they align seamlessly with
                                 strategy, timelines, and measurable outcomes.
                             </p>
                         </div>
                     </div>
-                    <!-- Workforce Development -->
                     <div class="card-gradient-border relative overflow-hidden md:h-[293px]" style="box-shadow: inset 0 -8px 8px rgba(0, 0, 0, 0.32); background: #232323;">
                         <img src="./assets/img/card-3.webp" alt="" aria-hidden="true"
                             class="absolute top-0 right-0 z-0 rounded-[24px]">
                         <div class="relative z-10 py-10 px-8">
-                            <div class="flex items-start justify-between">
+                            <div class="flex items-center  justify-between">
                                 <img src="./assets/img/card-icon-3.webp" alt="Workforce Development Icon"
-                                    class="w-[64px] h-[64px] mb-4 md:mb-6">
+                                    class="w-[64px] h-[64px] ">
                                     <span class="w-7 h-7 rounded-full border-2 bg-[#2E2E2E]/40 inline-flex items-center justify-center">
                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                                             <path d="M7 10l5 5 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
                                     </span>
                             </div>
-                            <h3 class="text-[#EBEBEB] font-bold text-xl md:text-2xl mb-2 md:mb-4">Workforce Development</h3>
+                            <h3 class="text-[#EBEBEB] font-bold text-xl md:text-2xl mb-2 md:my-6">Workforce Development</h3>
                             <p class="text-[#EBEBEB] text-[22px] leading-relaxed">
                                 We build agile, future-ready talent pipelines that equip organizations with the skills
                                 to thrive in an evolving business landscape.
@@ -165,21 +162,20 @@
                         </div>
                     </div>
 
-                    <!-- Enterprise Risk & Compliance -->
                     <div class="card-gradient-border relative overflow-hidden md:h-[293px]" style="box-shadow: inset 0 -8px 8px rgba(0, 0, 0, 0.32); background: #232323;">
                         <img src="./assets/img/card-4.webp" alt="" aria-hidden="true"
                             class="absolute top-0 right-0 z-0 rounded-[24px]">
                         <div class="relative z-10 py-10 px-8">
-                            <div class="flex items-start justify-between">
+                            <div class="flex items-center  justify-between">
                                 <img src="./assets/img/card-icon-4.webp" alt="Enterprise Risk & Compliance Icon"
-                                    class="w-[64px] h-[64px] mb-4 md:mb-6">
+                                    class="w-[64px] h-[64px] ">
                                     <span class="w-7 h-7 rounded-full border-2 bg-[#2E2E2E]/40 inline-flex items-center justify-center">
                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                                             <path d="M7 10l5 5 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
                                     </span>
                             </div>
-                            <h3 class="text-[#EBEBEB] font-bold text-xl md:text-2xl mb-2 md:mb-4">
+                            <h3 class="text-[#EBEBEB] font-bold text-xl md:text-2xl mb-2 md:my-6">
                                 Enterprise Risk &amp; Compliance
                             </h3>
                             <p class="text-[#EBEBEB] text-[22px] leading-relaxed">
@@ -189,14 +185,13 @@
                         </div>
                     </div>
 
-                    <!-- Organizational & Functional Strategy -->
-                    <div class="card-gradient-border relative overflow-hidden min-[1715px]:h-[636px] min-[1715px]:col-span-2" style="box-shadow: inset 0 -8px 8px rgba(0, 0, 0, 0.32); background: #232323;">
+                    <div class="card-gradient-border relative overflow-hidden md:h-[636px] md:col-span-2" style="box-shadow: inset 0 -8px 8px rgba(0, 0, 0, 0.32); background: #232323;">
                         <img src="./assets/img/card-4.webp" alt="" aria-hidden="true"
                             class="absolute top-0 right-0 z-0 rounded-[24px]">
                         <div class="relative z-10 py-10 px-8">
-                            <div class="flex items-start justify-between">
+                            <div class="flex items-center  justify-between">
                                 <img src="./assets/img/card-icon-5.webp" alt="Organizational & Functional Strategy Icon"
-                                    class="w-[64px] h-[64px] mb-4 md:mb-6">
+                                    class="w-[64px] h-[64px] ">
                                     <span class="w-7 h-7 rounded-full border-2 bg-[#2E2E2E]/40 inline-flex items-center justify-center">
                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                                             <path d="M7 10l5 5 5-5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -261,11 +256,11 @@
                 </div>
                 <div class="flex w-full md:w-3/4 flex-col  text-[#EBEBEB]">
                     <div class="py-4 md:py-8 border-b-2 border-[#2E2E2E]   text-xs md:text-lg text-[rgba(235, 235, 235, 1)]  flex text-center justify-center gap-3 md:gap-8">
-                        <label for="home" class="text-[#EBEBEB] cursor-poniter">Home</label>
-                        <label for="home" class="text-[#EBEBEB] cursor-poniter">About Us</label>
-                        <label for="home" class="text-[#EBEBEB] cursor-poniter">Services</label>
-                        <label for="home" class="text-[#EBEBEB] cursor-poniter">Views</label>
-                        <label for="home" class="text-[#EBEBEB] cursor-poniter">Privacy Policy</label>
+                         <a href="index.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">Home</a>
+                        <a href="about.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">About Us</a>
+                        <a href="services.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">Services</a>
+                        <a href="views.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">Views</a>
+                        <a href="privacy.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">Privacy Policy</a>
                     </div>
                     <div class="my-3 md:py-8  flex items-center gap-4 text-[#EBEBEB] justify-center ">
             

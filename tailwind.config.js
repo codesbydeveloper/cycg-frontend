@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         kiona: ['Kiona', 'sans-serif'],
+        kionasmall: ['Kiona-small', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
       },
     },
