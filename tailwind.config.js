@@ -3,8 +3,12 @@ module.exports = {
   content: ["./*.html"],
   theme: {
     extend: {
+      screens: {
+        'view-lg': '1792px',
+      },
       fontFamily: {
         kiona: ['Kiona', 'sans-serif'],
+        kionasmall: ['Kiona-small', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
       },
     },
