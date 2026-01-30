@@ -1859,6 +1859,10 @@ video {
   line-height: 1.375;
 }
 
+.leading-\[32px\]{
+  line-height: 32px;
+}
+
 .tracking-\[0\.12em\]{
   letter-spacing: 0.12em;
 }
@@ -2287,11 +2291,6 @@ video {
     grid-column: span 2 / span 2;
   }
 
-  .md\:my-4{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
   .md\:my-6{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -2373,6 +2372,10 @@ video {
     width: 75%;
   }
 
+  .md\:w-\[644px\]{
+    width: 644px;
+  }
+
   .md\:max-w-\[1320px\]{
     max-width: 1320px;
   }
@@ -2401,10 +2404,6 @@ video {
 
   .md\:flex-wrap{
     flex-wrap: wrap;
-  }
-
-  .md\:items-start{
-    align-items: flex-start;
   }
 
   .md\:justify-center{
