@@ -1887,6 +1887,10 @@ video {
   line-height: 1.375;
 }
 
+.leading-\[32px\]{
+  line-height: 32px;
+}
+
 .tracking-\[0\.12em\]{
   letter-spacing: 0.12em;
 }
@@ -2408,6 +2412,10 @@ video {
 
   .md\:w-3\/4{
     width: 75%;
+  }
+
+  .md\:w-\[644px\]{
+    width: 644px;
   }
 
   .md\:max-w-\[1320px\]{
