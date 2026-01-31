@@ -11,7 +11,9 @@
 <body class="min-h-screen views-page-gradient">
 
     <header class="fixed top-0 left-0 w-full z-50">
-        <div class="absolute top-0 left-0 w-full h-[128px] z-10 bg-[linear-gradient(180deg,#080808_0%,rgba(8,8,8,0.5)_50%,rgba(8,8,8,0)_100%)]"></div>
+        <div
+            class="absolute top-0 left-0 w-full h-[128px] z-10 bg-[linear-gradient(180deg,#080808_0%,rgba(8,8,8,0.5)_50%,rgba(8,8,8,0)_100%)]">
+        </div>
         <div class="z-50 max-w-[1920px] mx-auto py-6 px-4 lg:px-20 flex items-center justify-between text-white">
             <nav class="z-50 hidden lg:flex gap-12 uppercase text-sm tracking-wide">
                 <a href="index.html" class="link-underline text-[19px]">Home</a>
@@ -28,23 +30,31 @@
                     <img src="./assets/svg/mail.svg" alt="email" class="w-8 h-8 cursor-poniter">
                 </div>
             </div>
-            <button id="mobile-menu-btn" class="lg:hidden z-50 flex flex-col gap-1.5 w-8 h-8 justify-center items-center cursor-pointer" aria-label="Toggle menu">
+            <button id="mobile-menu-btn"
+                class="lg:hidden z-50 flex flex-col gap-1.5 w-8 h-8 justify-center items-center cursor-pointer"
+                aria-label="Toggle menu">
                 <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
                 <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
                 <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
             </button>
         </div>
-        <div id="mobile-menu" class="fixed inset-0 z-[100] bg-[#080808] transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
+        <div id="mobile-menu"
+            class="fixed inset-0 z-[100] bg-[#080808] transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
             <div class="relative w-full h-full">
-                <button id="mobile-menu-close" class="absolute top-6 right-4 z-[101] w-8 h-8 flex items-center justify-center cursor-pointer" aria-label="Close menu">
+                <button id="mobile-menu-close"
+                    class="absolute top-6 right-4 z-[101] w-8 h-8 flex items-center justify-center cursor-pointer"
+                    aria-label="Close menu">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
                     </svg>
                 </button>
                 <nav class="flex flex-col items-center justify-center h-full gap-8">
                     <a href="index.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Home</a>
-                    <a href="about.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">About Us</a>
-                    <a href="services.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Services</a>
+                    <a href="about.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">About
+                        Us</a>
+                    <a href="services.html"
+                        class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Services</a>
                     <a href="view.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Views</a>
                 </nav>
             </div>
@@ -56,99 +66,140 @@
     </div>
 
     <main class="views-page-gradient">
-        <div class=" pt-[152px] pb-[120px] px-4 sm:px-6 lg:px-12 xl:px-20">
-            <!-- One column below 1792px, row above -->
-            <div class="flex flex-col gap-12 view-lg:flex-row view-lg:flex-nowrap view-lg:gap-20 items-start">
-                <div class="w-full view-lg:w-[544px] view-lg:max-w-[544px] flex-shrink-0">
-                    <h1 class="font-kiona font-normal uppercase text-[40px] sm:text-[40px]  view-lg:text-[100px] leading-[90%] tracking-normal text-[#EBEBEB] mb-6">
-                        Views
-                    </h1>
-                    <p class="text-[#EBEBEB] font-inter text-[16px] sm:text-[20px] leading-relaxed max-w-[544px]">
-                        A curated collection of CYCG's perspectives, offering clear, actionable thinking on the forces shaping business today and tomorrow.
-                    </p>
-                </div>
+        <div class="md:pt-[180px] pt-[120px] pb-[20px] ">
+            <div class="max-w-[1320px] mx-auto pb-20">
+                <div
+                    class="flex flex-col gap-8 md:gap-0 lg:flex-row lg:flex-nowrap lg:gap-0 xl:gap-0 items-start justify-between">
+                    <div class="px-4 md:px-0 w-full lg:flex-1 lg:max-w-[400px] xl:max-w-[420px] flex-shrink-0">
+                        <h1
+                            class="font-kiona font-normal uppercase text-[40px] sm:text-[50px] md:text-[80px]  leading-[90%] tracking-normal text-[#EBEBEB] mb-3">
+                            Views
+                        </h1>
+                        <p class="text-[#EBEBEB] font-inter text-[16px]   leading-relaxed">
+                            A curated collection of CYCG's perspectives, offering clear, actionable thinking on the
+                            forces shaping business today and tomorrow.
+                        </p>
+                    </div>
 
-            
-                <div class="flex flex-col gap-2 view-lg:gap-3 w-full view-lg:w-[480px] view-lg:max-w-[480px] flex-shrink-0">
-                    <a href="views.html" class="px-6 py-4 bg-[#111111] hover:bg-[#2E2E2E] border border-[#333333] rounded-full  text-[#EBEBEB] text-[16px] font-normal  transition-colors">All Topics</a>
-                    <a href="views.html" class="px-6 py-4 bg-[#111111] hover:bg-[#2E2E2E] border border-[#333333] rounded-full  text-[#EBEBEB] text-[16px] font-normal  transition-colors">Workforce Development</a>
-                    <a href="views.html" class="px-6 py-4 bg-[#111111] hover:bg-[#2E2E2E] border border-[#333333] rounded-full  text-[#EBEBEB] text-[16px] font-normal  transition-colors">Enterprise Risk & Compliance</a>
-                    <a href="views.html" class="px-6 py-4 bg-[#111111] hover:bg-[#2E2E2E] border border-[#333333] rounded-full  text-[#EBEBEB] text-[16px] font-normal  transition-colors">Organizational Strategy</a>
-                    <a href="views.html" class="px-6 py-4 bg-[#111111] hover:bg-[#2E2E2E] border border-[#333333] rounded-full  text-[#EBEBEB] text-[16px] font-normal  transition-colors">Project Management</a>
-                    <a href="views.html" class="px-6 py-4 bg-[#111111] hover:bg-[#2E2E2E] border border-[#333333] rounded-full  text-[#EBEBEB] text-[16px] font-normal  transition-colors">Board Services</a>
-                </div>
+                    <div
+                        class="px-4 md:px-0 flex flex-col gap-1.5 sm:gap-2 w-full lg:w-auto min-w-full md:min-w-[420px] lg:max-w-[820px] xl:max-w-[860px] flex-shrink-0">
+                        <a href="views.html"
+                            class="px-5 py-3 sm:px-6 sm:py-4 bg-[#111111] hover:bg-[#2E2E2E] border border-[#333333] rounded-full text-[#EBEBEB] text-[14px] sm:text-[16px] font-normal transition-colors whitespace-nowrap">All
+                            Topics</a>
+                        <a href="views.html"
+                            class="px-5 py-3 sm:px-6 sm:py-4 bg-[#111111] hover:bg-[#2E2E2E] border border-[#333333] rounded-full text-[#EBEBEB] text-[14px] sm:text-[16px] font-normal transition-colors whitespace-nowrap">Workforce
+                            Development</a>
+                        <a href="views.html"
+                            class="px-5 py-3 sm:px-6 sm:py-4 bg-[#111111] hover:bg-[#2E2E2E] border border-[#333333] rounded-full text-[#EBEBEB] text-[14px] sm:text-[16px] font-normal transition-colors whitespace-nowrap">Enterprise
+                            Risk & Compliance</a>
+                        <a href="views.html"
+                            class="px-5 py-3 sm:px-6 sm:py-4 bg-[#111111] hover:bg-[#2E2E2E] border border-[#333333] rounded-full text-[#EBEBEB] text-[14px] sm:text-[16px] font-normal transition-colors whitespace-nowrap">Organizational
+                            Strategy</a>
+                        <a href="views.html"
+                            class="px-5 py-3 sm:px-6 sm:py-4 bg-[#111111] hover:bg-[#2E2E2E] border border-[#333333] rounded-full text-[#EBEBEB] text-[14px] sm:text-[16px] font-normal transition-colors whitespace-nowrap">Project
+                            Management</a>
+                        <a href="views.html"
+                            class="px-5 py-3 sm:px-6 sm:py-4 bg-[#111111] hover:bg-[#2E2E2E] border border-[#333333] rounded-full text-[#EBEBEB] text-[14px] sm:text-[16px] font-normal transition-colors whitespace-nowrap">Board
+                            Services</a>
+                    </div>
 
-                <div class="w-full view-lg:w-[408px] view-lg:max-w-[408px] flex-shrink-0 view-lg:text-right">
-                    <h2 class="font-kiona font-normal text-left view-lg:font-semibold uppercase text-[24px] sm:text-[32px] leading-[90%] tracking-normal text-[#EBEBEB] mt-0 view-lg:mt-[-40px] mb-4">
-                        Recent Views
-                    </h2>
-                    <div class="flex flex-col gap-4 view-lg:gap-5">
-                        <a href="view-detail.html" class="flex gap-4 p-4 bg-[#242424] hover:bg-[#2A2A2A] rounded-[20px] view-lg:rounded-[16px] transition-colors text-left view-lg:text-left">
-                            <div class="flex-shrink-0 w-[120px] h-[90px] view-lg:w-[100px] view-lg:h-[100px] rounded-[12px] overflow-hidden">
-                                <img src="./assets/img/blog img.webp" alt="" class="w-full h-full object-cover" loading="lazy">
-                            </div>
-                            <div class="flex-1 min-w-0 flex flex-col justify-center">
-                                <h3 class="text-white font-medium text-[16px]  leading-snug mb-1 line-clamp-2">Why every board needs a strategic partner: The power of...</h3>
-                                <span class="text-[#818181] text-[14px] font-normal">31st Jan 2026</span>
-                            </div>
-                        </a>
-                        <a href="view-detail.html" class="flex gap-4 p-4 bg-[#242424] hover:bg-[#2A2A2A] rounded-[20px] view-lg:rounded-[16px] transition-colors text-left view-lg:text-left">
-                            <div class="flex-shrink-0 w-[120px] h-[90px] view-lg:w-[100px] view-lg:h-[100px] rounded-[12px] overflow-hidden">
-                                <img src="./assets/img/blog img (1).webp" alt="" class="w-full h-full object-cover" loading="lazy">
-                            </div>
-                            <div class="flex-1 min-w-0 flex flex-col justify-center">
-                                <h3 class="text-white font-medium text-[16px]  leading-snug mb-1 line-clamp-2">Why every board needs a strategic partner: The power of...</h3>
-                                <span class="text-[#818181] text-[14px] font-normal">31st Jan 2026</span>
-                            </div>
-                        </a>
-                        <a href="view-detail.html" class="flex gap-4 p-4 bg-[#242424] hover:bg-[#2A2A2A] rounded-[20px] view-lg:rounded-[16px] transition-colors text-left view-lg:text-left">
-                            <div class="flex-shrink-0 w-[120px] h-[90px] view-lg:w-[100px] view-lg:h-[100px] rounded-[12px] overflow-hidden">
-                                <img src="./assets/img/blog img (2).webp" alt="" class="w-full h-full object-cover" loading="lazy">
-                            </div>
-                            <div class="flex-1 min-w-0 flex flex-col justify-center">
-                                <h3 class="text-white font-medium text-[16px]  leading-snug mb-1 line-clamp-2">Why every board needs a strategic partner: The power of...</h3>
-                                <span class="text-[#818181] text-[14px] font-normal">31st Jan 2026</span>
-                            </div>
-                        </a>
+                    <div class="px-4 md:px-0 w-full lg:w-auto lg:max-w-[320px] xl:max-w-[380px] flex-shrink-0 lg:text-right">
+                        <h2
+                            class="font-kiona font-normal text-left lg:font-semibold uppercase text-[20px] sm:text-[24px] lg:text-[28px] xl:text-[32px] leading-[90%] tracking-normal text-[#EBEBEB] mb-2 lg:mb-3">
+                            Recent Views
+                        </h2>
+                        <div class="flex flex-col gap-2.5 sm:gap-3 lg:gap-3 xl:gap-4">
+                            <a href="view-detail.html"
+                                class="flex gap-3 p-3 sm:p-4 bg-[#242424] hover:bg-[#2A2A2A] rounded-[16px] transition-colors text-left">
+                                <div
+                                    class="flex-shrink-0 w-[100px] h-[75px] sm:w-[110px] sm:h-[85px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px] rounded-[10px] overflow-hidden">
+                                    <img src="./assets/img/blog img.webp" alt="" class="w-full h-full object-cover"
+                                        loading="lazy">
+                                </div>
+                                <div class="flex-1 min-w-0 flex flex-col justify-center">
+                                    <h3
+                                        class="text-white font-medium text-[14px] sm:text-[15px] lg:text-[16px] leading-snug mb-0.5 line-clamp-2">
+                                        Why every board needs a strategic partner: The power of...</h3>
+                                    <span
+                                        class="text-[#818181] text-[12px] sm:text-[13px] lg:text-[14px] font-normal">31st
+                                        Jan 2026</span>
+                                </div>
+                            </a>
+                            <a href="view-detail.html"
+                                class="flex gap-3 p-3 sm:p-4 bg-[#242424] hover:bg-[#2A2A2A] rounded-[16px] transition-colors text-left">
+                                <div
+                                    class="flex-shrink-0 w-[100px] h-[75px] sm:w-[110px] sm:h-[85px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px] rounded-[10px] overflow-hidden">
+                                    <img src="./assets/img/blog img (1).webp" alt="" class="w-full h-full object-cover"
+                                        loading="lazy">
+                                </div>
+                                <div class="flex-1 min-w-0 flex flex-col justify-center">
+                                    <h3
+                                        class="text-white font-medium text-[14px] sm:text-[15px] lg:text-[16px] leading-snug mb-0.5 line-clamp-2">
+                                        Why every board needs a strategic partner: The power of...</h3>
+                                    <span
+                                        class="text-[#818181] text-[12px] sm:text-[13px] lg:text-[14px] font-normal">31st
+                                        Jan 2026</span>
+                                </div>
+                            </a>
+                            <a href="view-detail.html"
+                                class="flex gap-3 p-3 sm:p-4 bg-[#242424] hover:bg-[#2A2A2A] rounded-[16px] transition-colors text-left">
+                                <div
+                                    class="flex-shrink-0 w-[100px] h-[75px] sm:w-[110px] sm:h-[85px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px] rounded-[10px] overflow-hidden">
+                                    <img src="./assets/img/blog img (2).webp" alt="" class="w-full h-full object-cover"
+                                        loading="lazy">
+                                </div>
+                                <div class="flex-1 min-w-0 flex flex-col justify-center">
+                                    <h3
+                                        class="text-white font-medium text-[14px] sm:text-[15px] lg:text-[16px] leading-snug mb-0.5 line-clamp-2">
+                                        Why every board needs a strategic partner: The power of...</h3>
+                                    <span
+                                        class="text-[#818181] text-[12px] sm:text-[13px] lg:text-[14px] font-normal">31st
+                                        Jan 2026</span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <footer class="py-0 md:pb-12 px-6">
-            <div class="max-w-[1320px] mx-auto px-0 md:px-6 text-center text-white">
-                <div class="flex flex-col md:flex-row rounded-[24px] border-2 border-[#2E2E2E]">
-                    <div class="flex flex-col gap-4 p-4 py-8 border-r border-[#2E2E2E] border-b-2 md:border-b-0 tracking-wide w-full md:w-1/4 justify-center items-center">
-                        <img src="./assets/svg/logo.svg" alt="company logo">
-                        <div class="flex items-center justify-center">
-                            <p class="text-sm mr-4 text-inter font-[400]">subsidiary of</p>
-                            <img src="./assets/img/fyghtclub.webp" class="h-10" alt="fyght-club-logo">
+            <footer class="py-0 md:pb-12 px-6">
+                <div class="max-w-[1320px] mx-auto px-0 md:px-6 text-center text-white">
+                    <div class="flex flex-col md:flex-row rounded-[24px] border-2 border-[#2E2E2E]">
+                        <div
+                            class="flex flex-col gap-4 p-4 py-8 border-r border-[#2E2E2E] border-b-2 md:border-b-0 tracking-wide w-full md:w-1/4 justify-center items-center">
+                            <img src="./assets/svg/logo.svg" alt="company logo">
+                            <div class="flex items-center justify-center">
+                                <p class="text-sm mr-4 text-inter font-[400]">subsidiary of</p>
+                                <img src="./assets/img/fyghtclub.webp" class="h-10" alt="fyght-club-logo">
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex w-full md:w-3/4 flex-col text-[#EBEBEB]">
-                        <div class="py-4 md:py-8 border-b-2 border-[#2E2E2E] text-xs md:text-lg flex text-center justify-center gap-3 md:gap-8">
-                            <a href="index.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">Home</a>
-                            <a href="about.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">About Us</a>
-                            <a href="services.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">Services</a>
-                            <a href="view.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">Views</a>
-                            <a href="privacy.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">Privacy Policy</a>
-                        </div>
-                        <div class="my-3 md:py-8 flex items-center gap-4 text-[#EBEBEB] justify-center">
-                            <span class="z-50 uppercase text-sm md:text-lg">Connect with us</span>
-                            <div class="z-50 flex items-center gap-3">
-                                <img src="./assets/svg/linkedin.svg" alt="linkedin" class="w-8 h-8 cursor-poniter">
-                                <img src="./assets/svg/insta.svg" alt="instagram" class="w-8 h-8 cursor-poniter">
-                                <img src="./assets/svg/mail.svg" alt="email" class="w-8 h-8 cursor-poniter">
+                        <div class="flex w-full md:w-3/4 flex-col text-[#EBEBEB]">
+                            <div
+                                class="py-4 md:py-8 border-b-2 border-[#2E2E2E] text-xs md:text-lg flex text-center justify-center gap-3 md:gap-8">
+                                <a href="index.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">Home</a>
+                                <a href="about.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">About Us</a>
+                                <a href="services.html"
+                                    class="text-[#EBEBEB] cursor-pointer hover:text-white">Services</a>
+                                <a href="view.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">Views</a>
+                                <a href="privacy.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">Privacy
+                                    Policy</a>
+                            </div>
+                            <div class="my-3 md:py-8 flex items-center gap-4 text-[#EBEBEB] justify-center">
+                                <span class="z-50 uppercase text-sm md:text-lg">Connect with us</span>
+                                <div class="z-50 flex items-center gap-3">
+                                    <img src="./assets/svg/linkedin.svg" alt="linkedin" class="w-8 h-8 cursor-poniter">
+                                    <img src="./assets/svg/insta.svg" alt="instagram" class="w-8 h-8 cursor-poniter">
+                                    <img src="./assets/svg/mail.svg" alt="email" class="w-8 h-8 cursor-poniter">
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <p class="text-sm text-white mt-4 pb-6 md:pb-0">© 2025 CYCG | All Right Reserved.</p>
                 </div>
-                <p class="text-sm text-white mt-4 pb-6 md:pb-0">© 2025 CYCG  |  All Right Reserved.</p>
-            </div>
-        </footer>
-    
+            </footer>
+
     </main>
 
-  
+
     <script>
         document.getElementById('mobile-menu-btn')?.addEventListener('click', function () {
             document.getElementById('mobile-menu').classList.remove('translate-x-full');

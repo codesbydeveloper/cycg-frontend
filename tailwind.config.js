@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'view-lg': '1792px',
+        'view-lg': '1292px',
       },
       fontFamily: {
         kiona: ['Kiona', 'sans-serif'],
