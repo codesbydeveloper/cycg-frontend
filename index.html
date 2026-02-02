@@ -13,18 +13,25 @@
         <div
             class="absolute z-0 top-0 left-0 w-full h-[128px] z-10 bg-[linear-gradient(180deg,#080808_0%,rgba(8,8,8,0.5)_50%,rgba(8,8,8,0)_100%)]">
         </div>
-        <div class="z-50 max-w-[1920px] mx-auto py-6 px-4 lg:px-20 flex items-center justify-between text-white">
-            <nav class="z-50 hidden lg:flex gap-12 uppercase text-sm tracking-wide ">
+        <div class="z-50 max-w-[1920px] mx-auto py-6 px-4 xl:px-20 flex items-center justify-between text-white">
+
+            <nav class="z-50 hidden xl:flex  gap-12 uppercase text-sm tracking-wide ">
                 <a href="/index.html" class="link-underline link-underline-active text-[19px]">Home</a>
                 <a href="/about.html" class="link-underline text-[19px]">About Us</a>
                 <a href="/services.html" class="link-underline text-[19px]">Services</a>
-                <a href="/view.html" class="link-underline text-[19px]">Views</a>
+                <a href="javascript:void(0)" class="link-underline text-[19px] hover:cursor-pointer"
+                    onmouseenter="navigateOnce()">
+                    Views
+                </a>
             </nav>
-            <img src="./assets/svg/logo.svg" alt="CYCG" class="z-50 h-12 lg:h-16 lg:mr-20" />
-            <div class="hidden lg:flex items-center gap-4 text-[#EBEBEB]">
-                <span class="z-50 uppercase text-[19px] text-[rgba(235, 235, 235, 1)]">
-                    Connect with us
-                </span>
+            <img src="./assets/svg/logo.svg" alt="CYCG" class="z-50 h-12 xl:h-16 xl:mr-20" />
+
+            <div class="hidden xl:flex  items-center gap-4 text-[#EBEBEB]">
+                <nav class="z-50">
+                    <a href="./contact.html "
+                        class="z-50 uppercase link-underline cursor-pointer text-[19px] text-[rgba(235, 235, 235, 1)]">Connect
+                        with us</a>
+                </nav>
                 <div class="z-50 flex items-center gap-3">
                     <img src="./assets/svg/linkedin.svg" alt="linkedin" class="w-8 h-8 cursor-poniter">
                     <img src="./assets/svg/insta.svg" alt="instagram" class="w-8 h-8 cursor-poniter">
@@ -32,7 +39,7 @@
                 </div>
             </div>
             <button id="mobile-menu-btn"
-                class="lg:hidden z-50 flex flex-col gap-1.5 w-8 h-8 justify-center items-center cursor-pointer"
+                class="xl:hidden z-50 flex flex-col gap-1.5 w-8 h-8 justify-center items-center cursor-pointer"
                 aria-label="Toggle menu">
                 <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
                 <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
@@ -40,7 +47,7 @@
             </button>
         </div>
         <div id="mobile-menu"
-            class="fixed inset-0 z-[100] bg-[#080808] transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
+            class="fixed inset-0 z-[100] bg-[#080808] transform translate-x-full transition-transform duration-300 ease-in-out xl:hidden">
             <div class="relative w-full h-full">
                 <button id="mobile-menu-close"
                     class="absolute top-6 right-4 z-[101] w-8 h-8 flex items-center justify-center cursor-pointer"
@@ -52,8 +59,10 @@
                 </button>
                 <nav class="flex flex-col items-center justify-center h-full gap-8">
                     <a href="/index.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Home</a>
-                    <a href="/about.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">About Us</a>
-                    <a href="/services.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Services</a>
+                    <a href="/about.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">About
+                        Us</a>
+                    <a href="/services.html"
+                        class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Services</a>
                     <a href="/view.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Views</a>
                 </nav>
             </div>
@@ -112,9 +121,6 @@
                         class="absolute inset-0 w-full h-full object-cover md:scale-100 scale-[0.8] z-[1] rounded-[24px]">
                     <div class="relative z-[20] md:py-10 py-6 px-6 md:px-8">
                         <img src="./assets/img/card-icon-2.webp" alt="Project Management Icon"
-
-
-                        
                             class="w-12 h-12 mb-4 md:mb-6">
                         <h3 class="text-white font-bold text-xl md:text-2xl my-6 md:mt-4 md:mb-4">Project Management
                         </h3>
@@ -177,6 +183,7 @@
 
     <section class="bg-layout relative  px-6  pt-20 pb-16 md:pt-[120px] md:pb-[120px]">
         <div class="relative w-full text-left md:text-center">
+
             <span
                 class="font-kiona font-normal text-center uppercase text-[32px] leading-[90%] sm:text-[40px] md:text-[46px]  tracking-normal text-[#EBEBEB] font-kiona ">
                 <span class="fx-word-2 font-kiona font-normal text-center uppercase z-0 ">Perspectives</span> to <span
@@ -281,6 +288,12 @@
                 }
             }
         });
+        let hasNavigated = false;
+        function navigateOnce() {
+            if (hasNavigated) return;
+            hasNavigated = true;
+            window.location.href = "/view.html";
+        }
     </script>
 </body>
 

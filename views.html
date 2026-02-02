@@ -46,44 +46,76 @@
                 inset 0 -8px 8px 0 rgba(0, 0, 0, 0.32),
                 0 0 16px 0 rgba(0, 0, 0, 0.32);
         }
+
+/* Default: mobile (≤ 930px) */
+.views-grid {
+  grid-template-columns: 1fr;
+  justify-content: center; /* ✅ ADD THIS */
+}
+
+/* Tablet: 931px – 1319px */
+@media (min-width: 931px) and (max-width: 1319px) {
+  .views-grid {
+    grid-template-columns: repeat(2, 424px);
+    justify-content: center; /* ✅ CRITICAL */
+  }
+}
+
+/* Desktop: ≥ 1320px */
+@media (min-width: 1320px) {
+  .views-grid {
+    grid-template-columns: repeat(3, 424px);
+    justify-content: space-between;
+  }
+}
+
+
     </style>
 </head>
 
 <body class="min-h-screen views-page-gradient">
 
-    <header class="fixed top-0 left-0 w-full z-50">
+      <header class="fixed top-0 left-0 w-full z-50">
         <div
             class="absolute z-0 top-0 left-0 w-full h-[128px] z-10 bg-[linear-gradient(180deg,#080808_0%,rgba(8,8,8,0.5)_50%,rgba(8,8,8,0)_100%)]">
         </div>
-        <div class="z-50 max-w-[1920px] mx-auto py-6 px-4 lg:px-20 flex items-center justify-between text-white">
-            <nav class="z-50 hidden lg:flex gap-12 uppercase text-sm tracking-wide ">
-                 <a href="/index.html" class="link-underline text-[19px]">Home</a>
+      <div class="z-50 max-w-[1920px] mx-auto py-6 px-4 xl:px-20 flex items-center justify-between text-white">
+
+            <nav class="z-50 hidden xl:flex  gap-12 uppercase text-sm tracking-wide ">
+                <a href="/index.html" class="link-underline  text-[19px]">Home</a>
                 <a href="/about.html" class="link-underline text-[19px]">About Us</a>
                 <a href="/services.html" class="link-underline text-[19px]">Services</a>
-                <a href="/view.html" class="link-underline link-underline-active text-[19px]">Views</a>
+                <a href="/view.html" class="link-underline text-[19px]">Views</a>
             </nav>
-            <img src="./assets/svg/logo.svg" alt="CYCG" class="z-50 h-12 lg:h-16 lg:mr-20" />
-            <div class="hidden lg:flex items-center gap-4 text-[#EBEBEB]">
-                <span class="z-50 uppercase text-[19px] text-[rgba(235, 235, 235, 1)]">
-                    Connect with us
-                </span>
+     <img src="./assets/svg/logo.svg" alt="CYCG" class="z-50 h-12 xl:h-16 xl:mr-20" />
+
+            <div class="hidden xl:flex  items-center gap-4 text-[#EBEBEB]">
+             <nav class="z-50">
+                    <a href="./contact.html " class="z-50 uppercase link-underline cursor-pointer text-[19px] text-[rgba(235, 235, 235, 1)]">Connect with us</a>
+                </nav>
                 <div class="z-50 flex items-center gap-3">
                     <img src="./assets/svg/linkedin.svg" alt="linkedin" class="w-8 h-8 cursor-poniter">
                     <img src="./assets/svg/insta.svg" alt="instagram" class="w-8 h-8 cursor-poniter">
                     <img src="./assets/svg/mail.svg" alt="email" class="w-8 h-8 cursor-poniter">
                 </div>
             </div>
-            <button id="mobile-menu-btn" class="lg:hidden z-50 flex flex-col gap-1.5 w-8 h-8 justify-center items-center cursor-pointer" aria-label="Toggle menu">
+            <button id="mobile-menu-btn"
+                class="xl:hidden z-50 flex flex-col gap-1.5 w-8 h-8 justify-center items-center cursor-pointer"
+                aria-label="Toggle menu">
                 <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
                 <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
                 <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
             </button>
         </div>
-        <div id="mobile-menu" class="fixed inset-0 z-[100] bg-[#080808] transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
+        <div id="mobile-menu"
+            class="fixed inset-0 z-[100] bg-[#080808] transform translate-x-full transition-transform duration-300 ease-in-out xl:hidden">
             <div class="relative w-full h-full">
-                <button id="mobile-menu-close" class="absolute top-6 right-4 z-[101] w-8 h-8 flex items-center justify-center cursor-pointer" aria-label="Close menu">
+                <button id="mobile-menu-close"
+                    class="absolute top-6 right-4 z-[101] w-8 h-8 flex items-center justify-center cursor-pointer"
+                    aria-label="Close menu">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
                     </svg>
                 </button>
                 <nav class="flex flex-col items-center justify-center h-full gap-8">
@@ -101,13 +133,12 @@
 
     <main class="min-h-screen views-page-gradient pt-[120px] pb-[18px] px-4 sm:px-6 lg:px-8 xl:px-12 md:pt-[160px] md:pb-[80px]">
         <div class="max-w-[1320px] mx-auto w-full">
-            <!-- Section header -->
+       
             <h2
-                class="font-kiona font-normal uppercase text-[32px] sm:text-[40px] md:text-[40px] leading-[90%] tracking-normal text-white mb-8 sm:mb-10 lg:mb-12">
+                class="font-kiona font-normal uppercase text-[32px] sm:text-[40px] md:text-[40px]  tracking-normal text-white mb-8 sm:mb-10 lg:mb-12">
                 <span class="relative z-10 fx-word-2">Workforce</span> <span class="pl-20px">Development</span>
             </h2>
 
-            <!-- Card grid: custom breakpoints (<=930px 1 col, 931px–1319px 2 cols, >=1320px 3 cols) -->
             <div class="grid gap-4 sm:gap-5 lg:gap-6 mb-16 sm:mb-20 lg:mb-24 justify-items-center xl:justify-items-stretch views-grid">
                 <!-- Card 1 -->
                 <div class="blog-card-wrapper w-full max-w-[424px] xl:w-[424px]">
@@ -318,46 +349,49 @@
                 </div>
             </div>
 
-            <!-- LOAD MORE button -->
+      
             <div class="flex justify-center mt-8 sm:mt-12">
                 <button type="button"
                     class="w-full max-w-[206px] h-[54px] sm:h-[61px] bg-[#EBEBEB] text-[#2E2E2E] hover:bg-[#d9d9d9] uppercase text-[18px] sm:text-[20px] lg:text-[24px] font-medium tracking-wide transition-colors">
                     LOAD MORE
                 </button>
             </div>
-            <div class="w-full flex justify-center px-0 mt-16 sm:mt-20 lg:mt-24 xl:mt-32">
-                <div
-                    class="w-full mx-auto xl:h-[397px] h-auto rounded-[20px] sm:rounded-[24px] overflow-hidden flex flex-col xl:flex-row shadow-[0_40px_56px_0_#00000052,-24px_-20px_64px_0_#FFFFFF1A]">
+              <div class="w-full flex justify-center px-4 max-w-[1351px]:px-6 mt-24 md:mt-32 xl:mt-36 max-w-[1320px] mx-auto ">
+            <div class="w-full mx-autoh-auto lg:h-auto xl:h-[397px] h-auto rounded-[20px] sm:rounded-[24px]  overflow-hidden flex flex-col md:flex-row xl:flex-row shadow-[0_40px_56px_0_#00000052,-24px_-20px_64px_0_#FFFFFF1A]">
+
+                <div class="w-full xl:w-[60%] h-auto xl:h-full flex flex-col  items-start  justify-start xl:justify-center  bg-[#ffffff]  px-6 py-8 md:px-12 md:py-8 text-left">
 
                     <div
-                        class="w-full xl:w-[60%] h-full flex flex-col max-h-[260px] md:max-h-full items-start justify-end bg-[#ffffff] px-6 py-8  md:px-12 md:py-8 text-left">
-                        <div
-                            class="font-kiona !font-[400] text-[20px] sm:text-[24px] md:text-[28px] xl:text-[40px] leading-[110%] tracking-[0] uppercase text-[#2E2E2E] align-middle mb-3 sm:mb-4">
-                           <b> Schedule a consultation today</b>
-                        </div>
-                        <p
-                            class="text-[13px] sm:text-[16px] md:text-[18px] xl:text-[24px] font-[500] leading-relaxed text-[#2E2E2E] mb-6 sm:mb-8 max-w-[620px]">
-                            Where enterprise expertise, results-driven solutions, and future-ready strategies converge
-                            for your success.
-                        </p>
-                        <div class="flex items-center justify-start">
-                            <button
-                                class="flex items-center justify-center px-8 py-4 bg-[#2E2E2E] text-white text-sm xl:text-[24px] font-[600]  whitespace-nowrap mx-auto xl:mx-0">
-                                SCHEDULE CALL NOW
-                            </button>
-                        </div>
+                        class="font-kiona !font-[400] text-[20px] sm:text-[24px] md:text-[28px] xl:text-[40px] leading-[110%] tracking-[0] uppercase text-[#2E2E2E] align-middle mb-3 sm:mb-4">
+                        <b> Schedule a consultation today</b>
                     </div>
-                    <div class="relative w-full xl:w-1/2 h-[273px] md:h-[240px] xl:h-full">
-                        <img src="./assets/img/laptop.webp" alt="Laptop"
-                            class="absolute inset-0 w-full h-full hidden md:block object-cover">
-                            <img src="./assets/img/mobile-view.png" alt="Laptop"
-                            class="absolute inset-0 w-full h-full md:hidden object-cover">
-                        <div
-                            class="md:block hidden absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,1)_0%,rgba(255,255,255,0)_100%)] xl:bg-[linear-gradient(90deg,rgba(255,255,255,1)_0%,rgba(255,255,255,0)_25%)]">
-                        </div>
+                    <p
+                        class="text-[13px] sm:text-[16px] md:text-[18px] xl:text-[24px] font-[500] leading-relaxed text-[#2E2E2E] mb-6 sm:mb-8 max-w-[620px]">
+                        Where enterprise expertise, results-driven solutions, and future-ready strategies converge
+                        for your success.
+                    </p>
+                    <div class="flex items-center justify-start">
+                        <button
+                            class="flex items-center justify-center px-8 py-4 bg-[#2E2E2E] text-white text-sm xl:text-[24px] font-[600]  whitespace-nowrap mx-auto xl:mx-0">
+                            SCHEDULE CALL NOW
+                        </button>
                     </div>
                 </div>
+                <div class="relative w-full   h-[273px]   md:min-h-[320px]   md:h-auto  xl:w-1/2  xl:h-full">
+
+                    <img src="./assets/img/laptop.webp" alt="Laptop"
+                        class="absolute inset-0 w-full h-full hidden md:block object-cover">
+
+                    <img src="./assets/img/mobile-view.png" alt="Laptop"
+                        class="absolute inset-0 w-full h-full md:hidden object-cover">
+
+                    <div class="hidden xl:block absolute inset-0
+        bg-[linear-gradient(90deg,rgba(255,255,255,1)_0%,rgba(255,255,255,0)_25%)]">
+                    </div>
+                </div>
+
             </div>
+        </div>
         </div>
     </main>
 
@@ -396,7 +430,7 @@
             <p class="text-sm text-white mt-4 pb-6 md:pb-0">© 2025 CYCG  |  All Right Reserved.</p>
         </div>
     </footer>
-     <script>
+    <script>
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const mobileMenuClose = document.getElementById('mobile-menu-close');
