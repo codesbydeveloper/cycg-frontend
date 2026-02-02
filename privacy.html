@@ -8,6 +8,14 @@
     <link href="./output.css" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="./assets/svg/logo.svg" />
 </head>
+   <style>
+   #views-dropdown {
+      overflow: hidden;
+      transition: height 600ms cubic-bezier(0.22, 1, 0.36, 1);
+      will-change: height;
+    }
+   </style>
+ 
 
 <body class="min-h-screen page-gradient-dark-to-light">
     <header class="fixed top-0 left-0 w-full z-50">
@@ -19,9 +27,11 @@
                 <a href="/index.html" class="link-underline text-[19px]">Home</a>
                 <a href="/about.html" class="link-underline text-[19px]">About Us</a>
                 <a href="/services.html" class="link-underline text-[19px]">Services</a>
-                <a href="/view.html" class="link-underline text-[19px]">Views</a>
+                <button type="button" id="views-toggle"
+                    class="link-underline text-[19px] uppercase cursor-pointer bg-transparent border-none text-inherit font-inherit p-0">Views</button>
             </nav>
-            <a class="z-50" href="index.html"><img src="./assets/svg/logo.svg"  alt="CYCG" class="z-50 h-12 lg:h-16 lg:mr-20" /></a>
+            <a class="z-50" href="index.html"><img src="./assets/svg/logo.svg" alt="CYCG"
+                    class="z-50 h-12 lg:h-16 lg:mr-20" /></a>
             <div class="hidden lg:flex items-center gap-4 text-[#EBEBEB]">
                 <span class="z-50 uppercase text-[19px] text-[rgba(235, 235, 235, 1)]">
                     Connect with us
@@ -53,18 +63,123 @@
                 </button>
                 <nav class="flex flex-col items-center justify-center h-full gap-8">
                     <a href="/index.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Home</a>
-                    <a href="/about.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">About Us</a>
-                    <a href="/services.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Services</a>
+                    <a href="/about.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">About
+                        Us</a>
+                    <a href="/services.html"
+                        class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Services</a>
                     <a href="/view.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Views</a>
                 </nav>
             </div>
         </div>
+        <div id="views-dropdown" class="fixed top-[128px] left-0 w-full h-0 z-40">
+        </div>
     </header>
-     <div
+    <div
         class="fixed bottom-4 right-4 z-[9999] rounded-full flex items-center justify-center bg-[#1E1E1E]/20 backdrop-blur-sm ">
         <img src="./assets/svg/chat.svg" alt="chat icon" class="ml-2 mt-2 h-14 md:h-16 ">
     </div>
-
+    <main id="views-source" class="hidden views-page-gradient" aria-hidden="true">
+        <div class="pt-6 pb-10">
+            <div class="max-w-[1320px] mx-auto">
+                <div
+                    class="flex flex-col gap-8 md:gap-0 lg:flex-row lg:flex-nowrap lg:gap-0 xl:gap-0 items-start justify-between">
+                    <div class="px-4 md:px-0 w-full lg:flex-1 lg:max-w-[400px] xl:max-w-[420px] flex-shrink-0">
+                        <h1
+                            class="font-kiona font-normal uppercase text-[40px] sm:text-[50px] md:text-[80px] leading-[90%] tracking-normal text-[#EBEBEB] mb-3">
+                            Views</h1>
+                        <p class="text-[#EBEBEB] font-inter text-[16px] leading-relaxed">A curated collection of CYCG's
+                            perspectives, offering clear, actionable thinking on the forces shaping business today and
+                            tomorrow.</p>
+                    </div>
+                    <div
+                        class="px-4 md:px-0 flex flex-col gap-1.5 sm:gap-2 w-full lg:w-auto min-w-full md:min-w-[420px] lg:max-w-[820px] xl:max-w-[860px] flex-shrink-0">
+                        <a href="views.html"
+                            class="px-5 py-3 sm:px-6 sm:py-4 bg-[#111111] hover:bg-[#2E2E2E] border border-[#333333] rounded-full text-[#EBEBEB] text-[14px] sm:text-[16px] font-normal transition-colors whitespace-nowrap">All
+                            Topics</a>
+                        <a href="views.html"
+                            class="px-5 py-3 sm:px-6 sm:py-4 bg-[#111111] hover:bg-[#2E2E2E] border border-[#333333] rounded-full text-[#EBEBEB] text-[14px] sm:text-[16px] font-normal transition-colors whitespace-nowrap">Workforce
+                            Development</a>
+                        <a href="views.html"
+                            class="px-5 py-3 sm:px-6 sm:py-4 bg-[#111111] hover:bg-[#2E2E2E] border border-[#333333] rounded-full text-[#EBEBEB] text-[14px] sm:text-[16px] font-normal transition-colors whitespace-nowrap">Enterprise
+                            Risk & Compliance</a>
+                        <a href="views.html"
+                            class="px-5 py-3 sm:px-6 sm:py-4 bg-[#111111] hover:bg-[#2E2E2E] border border-[#333333] rounded-full text-[#EBEBEB] text-[14px] sm:text-[16px] font-normal transition-colors whitespace-nowrap">Organizational
+                            Strategy</a>
+                        <a href="views.html"
+                            class="px-5 py-3 sm:px-6 sm:py-4 bg-[#111111] hover:bg-[#2E2E2E] border border-[#333333] rounded-full text-[#EBEBEB] text-[14px] sm:text-[16px] font-normal transition-colors whitespace-nowrap">Project
+                            Management</a>
+                        <a href="views.html"
+                            class="px-5 py-3 sm:px-6 sm:py-4 bg-[#111111] hover:bg-[#2E2E2E] border border-[#333333] rounded-full text-[#EBEBEB] text-[14px] sm:text-[16px] font-normal transition-colors whitespace-nowrap">Board
+                            Services</a>
+                    </div>
+                    <div
+                        class="px-4 md:px-0 w-full lg:w-auto lg:max-w-[320px] xl:max-w-[380px] flex-shrink-0 lg:text-right">
+                        <h2
+                            class="font-kiona font-normal text-left lg:font-semibold uppercase text-[20px] sm:text-[24px] lg:text-[28px] xl:text-[32px] leading-[90%] tracking-normal text-[#EBEBEB] mb-2 lg:mb-3">
+                            Recent Views</h2>
+                        <div class="flex flex-col gap-2.5 sm:gap-3 lg:gap-3 xl:gap-4">
+                            <a href="view-detail.html"
+                                class="flex gap-3 p-3 sm:p-4 bg-[#242424] hover:bg-[#2A2A2A] rounded-[16px] transition-colors text-left">
+                                <div
+                                    class="flex-shrink-0 w-[100px] h-[75px] sm:w-[110px] sm:h-[85px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px] rounded-[10px] overflow-hidden">
+                                    <img src="./assets/img/blog img.webp" alt="" class="w-full h-full object-cover"
+                                        loading="lazy">
+                                </div>
+                                <div class="flex-1 min-w-0 flex flex-col justify-center">
+                                    <h3
+                                        class="text-white font-medium text-[14px] sm:text-[15px] lg:text-[16px] leading-snug mb-0.5 line-clamp-2">
+                                        Why every board needs a strategic partner: The power of...</h3>
+                                    <span
+                                        class="text-[#818181] text-[12px] sm:text-[13px] lg:text-[14px] font-normal">31st
+                                        Jan 2026</span>
+                                </div>
+                            </a>
+                            <a href="view-detail.html"
+                                class="flex gap-3 p-3 sm:p-4 bg-[#242424] hover:bg-[#2A2A2A] rounded-[16px] transition-colors text-left">
+                                <div
+                                    class="flex-shrink-0 w-[100px] h-[75px] sm:w-[110px] sm:h-[85px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px] rounded-[10px] overflow-hidden">
+                                    <img src="./assets/img/blog img (1).webp" alt="" class="w-full h-full object-cover"
+                                        loading="lazy">
+                                </div>
+                                <div class="flex-1 min-w-0 flex flex-col justify-center">
+                                    <h3
+                                        class="text-white font-medium text-[14px] sm:text-[15px] lg:text-[16px] leading-snug mb-0.5 line-clamp-2">
+                                        Why every board needs a strategic partner: The power of...</h3>
+                                    <span
+                                        class="text-[#818181] text-[12px] sm:text-[13px] lg:text-[14px] font-normal">31st
+                                        Jan 2026</span>
+                                </div>
+                            </a>
+                            <a href="view-detail.html"
+                                class="flex gap-3 p-3 sm:p-4 bg-[#242424] hover:bg-[#2A2A2A] rounded-[16px] transition-colors text-left">
+                                <div
+                                    class="flex-shrink-0 w-[100px] h-[75px] sm:w-[110px] sm:h-[85px] lg:w-[90px] lg:h-[90px] xl:w-[100px] xl:h-[100px] rounded-[10px] overflow-hidden">
+                                    <img src="./assets/img/blog img (2).webp" alt="" class="w-full h-full object-cover"
+                                        loading="lazy">
+                                </div>
+                                <div class="flex-1 min-w-0 flex flex-col justify-center">
+                                    <h3
+                                        class="text-white font-medium text-[14px] sm:text-[15px] lg:text-[16px] leading-snug mb-0.5 line-clamp-2">
+                                        Why every board needs a strategic partner: The power of...</h3>
+                                    <span
+                                        class="text-[#818181] text-[12px] sm:text-[13px] lg:text-[14px] font-normal">31st
+                                        Jan 2026</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="views-close-btn"
+                class="mx-auto mb-10 flex items-center justify-center w-7 h-7 rounded-full border border-[#333] text-[#EBEBEB] transition hover:bg-[#1a1a1a]"
+                aria-label="Close Views menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="1.75">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+                </svg>
+            </button>
+        </div>
+    </main>
 
     <main class="relative pt-[120px] pb-[80px] md:pt-[160px] md:pb-[120px] bg-[#080808]">
 
@@ -118,7 +233,6 @@
                 </div>
             </section>
 
-            <!-- 2. How We Use Information -->
             <section class="space-y-4 mb-10">
                 <h2 class="font-semibold text-[20px] text-white">
                     2. How We Use Information
@@ -138,7 +252,6 @@
                 </p>
             </section>
 
-            <!-- 3. Confidentiality and Data Protection -->
             <section class="space-y-4 mb-10">
                 <h2 class="font-semibold text-[20px] text-white">
                     3. Confidentiality and Data Protection
@@ -154,7 +267,6 @@
                 </p>
             </section>
 
-            <!-- 4. Information Sharing and Disclosure -->
             <section class="space-y-4 mb-10">
                 <h2 class="font-semibold text-[20px] text-white">
                     4. Information Sharing and Disclosure
@@ -173,7 +285,6 @@
                 </p>
             </section>
 
-            <!-- 5. Data Retention -->
             <section class="space-y-4 mb-10">
                 <h2 class="font-semibold text-[20px] text-white">
                     5. Data Retention
@@ -185,7 +296,6 @@
                 </p>
             </section>
 
-            <!-- 6. Your Rights and Choices -->
             <section class="space-y-4 mb-10">
                 <h2 class="font-semibold text-[20px] text-white">
                     6. Your Rights and Choices
@@ -205,7 +315,6 @@
                 </p>
             </section>
 
-            <!-- 7. Third-Party Websites -->
             <section class="space-y-4 mb-10">
                 <h2 class="font-semibold text-[20px] text-white">
                     7. Third-Party Websites
@@ -217,7 +326,6 @@
                 </p>
             </section>
 
-            <!-- 8. Changes to This Privacy Policy -->
             <section class="space-y-4 mb-10">
                 <h2 class="font-semibold text-[20px] text-white">
                     8. Changes to This Privacy Policy
@@ -229,7 +337,6 @@
                 </p>
             </section>
 
-            <!-- 9. Contact Information -->
             <section class="space-y-4">
                 <h2 class="font-semibold text-[20px] text-white">
                     9. Contact Information
@@ -261,18 +368,17 @@
                 <div class="flex w-full md:w-3/4 flex-col  text-[#EBEBEB]">
                     <div
                         class="py-4 md:py-8 border-b-2 border-[#2E2E2E]   text-xs md:text-lg text-[rgba(235, 235, 235, 1)]  flex text-center justify-center gap-3 md:gap-7">
-                      <a href="/index.html" class="text-[#EBEBEB] cursor-poniter">Home</a>
-                      <a href="/about.html" class="text-[#EBEBEB] cursor-poniter">About Us</a>
-                      <a href="/services.html" class="text-[#EBEBEB] cursor-poniter">Services</a>
-                      <a href="/view.html" class="text-[#EBEBEB] cursor-poniter">Views</a>
-                      <a href="/privacy.html" class="text-[#EBEBEB] cursor-poniter">Privacy Policy</a>
-                  </div>
+                        <a href="/index.html" class="text-[#EBEBEB] cursor-poniter">Home</a>
+                        <a href="/about.html" class="text-[#EBEBEB] cursor-poniter">About Us</a>
+                        <a href="/services.html" class="text-[#EBEBEB] cursor-poniter">Services</a>
+                        <a href="/view.html" class="text-[#EBEBEB] cursor-poniter">Views</a>
+                        <a href="/privacy.html" class="text-[#EBEBEB] cursor-poniter">Privacy Policy</a>
+                    </div>
                     <div class="my-3 md:py-8  flex items-center gap-4 text-[#EBEBEB] justify-center ">
-
-                        <a href="./contact.html" class="z-50 uppercase  text-sm md:text-lg text-[rgba(235, 235, 235, 1)]">
+                        <a href="./contact.html"
+                            class="z-50 uppercase  text-sm md:text-lg text-[rgba(235, 235, 235, 1)]">
                             Connect with us
                         </a>
-
                         <div class="z-50 flex items-center gap-3">
                             <img src="./assets/svg/linkedin.svg" alt="linkedin" class="w-8 h-8 cursor-poniter">
                             <img src="./assets/svg/insta.svg" alt="instagram" class="w-8 h-8 cursor-poniter">
@@ -284,7 +390,7 @@
             <p class="text-sm text-white mt-4 pb-6 md:pb-0">© 2025 CYCG | All Right Reserved.</p>
         </div>
     </footer>
-      <script>
+    <script>
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const mobileMenuClose = document.getElementById('mobile-menu-close');
@@ -320,6 +426,6 @@
             }
         });
     </script>
+    <script src="script.js"></script>
 </body>
-
 </html>
