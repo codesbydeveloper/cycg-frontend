@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Views | CYCG</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/svg/logo.svg" />
     <link href="./output.css" rel="stylesheet">
 </head>
 
@@ -21,9 +22,11 @@
                 <a href="services.html" class="link-underline text-[19px]">Services</a>
                 <a href="view.html" class="link-underline link-underline-active text-[19px]">Views</a>
             </nav>
-            <img src="./assets/svg/logo.svg" alt="CYCG" class="z-50 h-12 lg:h-16 lg:mr-20" />
+            <a class="z-50" href="index.html"><img src="./assets/svg/logo.svg"  alt="CYCG" class="z-50 h-12 lg:h-16 lg:mr-20" /></a>
             <div class="hidden lg:flex items-center gap-4 text-[#EBEBEB]">
-                <span class="z-50 uppercase text-[19px] text-[rgba(235, 235, 235, 1)]">Connect with us</span>
+                <nav class="z-50">
+                    <a href="./contact.html " class="z-50 uppercase link-underline cursor-pointer text-[19px] text-[rgba(235, 235, 235, 1)]">Connect with us</a>
+                </nav>
                 <div class="z-50 flex items-center gap-3">
                     <img src="./assets/svg/linkedin.svg" alt="linkedin" class="w-8 h-8 cursor-poniter">
                     <img src="./assets/svg/insta.svg" alt="instagram" class="w-8 h-8 cursor-poniter">
@@ -61,8 +64,8 @@
         </div>
     </header>
 
-    <div class="fixed bottom-4 right-4 rounded-full flex items-center justify-center bg-[#080808]">
-        <img src="./assets/svg/chat.svg" alt="chat icon" class="ml-2 mt-2 h-12">
+    <div class="fixed bottom-4 right-4 z-[9999] rounded-full flex items-center justify-center bg-[#1E1E1E]/20 backdrop-blur-sm bg-[#080808]">
+        <img src="./assets/svg/chat.svg" alt="chat icon" class="ml-2 mt-2 h-14 md:h-16">
     </div>
 
     <main class="views-page-gradient">
@@ -174,7 +177,7 @@
                         </div>
                         <div class="flex w-full md:w-3/4 flex-col text-[#EBEBEB]">
                             <div
-                                class="py-4 md:py-8 border-b-2 border-[#2E2E2E] text-xs md:text-lg flex text-center justify-center gap-3 md:gap-8">
+                                class="py-4 md:py-8 border-b-2 border-[#2E2E2E] text-xs md:text-lg flex text-center justify-center gap-3 md:gap-7">
                                 <a href="index.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">Home</a>
                                 <a href="about.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">About Us</a>
                                 <a href="services.html"
@@ -184,7 +187,7 @@
                                     Policy</a>
                             </div>
                             <div class="my-3 md:py-8 flex items-center gap-4 text-[#EBEBEB] justify-center">
-                                <span class="z-50 uppercase text-sm md:text-lg">Connect with us</span>
+                                <a href="./contact.html" class="z-50 uppercase text-sm md:text-lg">Connect with us</a>
                                 <div class="z-50 flex items-center gap-3">
                                     <img src="./assets/svg/linkedin.svg" alt="linkedin" class="w-8 h-8 cursor-poniter">
                                     <img src="./assets/svg/insta.svg" alt="instagram" class="w-8 h-8 cursor-poniter">

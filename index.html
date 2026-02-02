@@ -5,26 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CYCG | Business Consulting & Strategy Services</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/svg/logo.svg" />
     <link href="./output.css" rel="stylesheet">
+    <style>
+        /* Header animation - fade in from top */
+        header {
+            animation: fadeInDown 0.8s ease-in-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hero heading animation - fade in with slight upward movement */
+        section h1 {
+            animation: fadeInUp 1s ease-in-out 0.3s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hero section overlay fade in */
+        section .absolute.inset-0.z-0 {
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0.5;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <header class="fixed top-0 left-0 w-full z-50">
         <div
-            class="absolute z-0 top-0 left-0 w-full h-[128px] z-10 bg-[linear-gradient(180deg,#080808_0%,rgba(8,8,8,0.5)_50%,rgba(8,8,8,0)_100%)]">
+            class="absolute top-0 left-0 w-full h-[128px] z-10 bg-[linear-gradient(180deg,#080808_0%,rgba(8,8,8,0.5)_50%,rgba(8,8,8,0)_100%)]">
         </div>
         <div class="z-50 max-w-[1920px] mx-auto py-6 px-4 lg:px-20 flex items-center justify-between text-white">
-            <nav class="z-50 hidden lg:flex gap-12 uppercase text-sm tracking-wide ">
-                <a href="/index.html" class="link-underline link-underline-active text-[19px]">Home</a>
-                <a href="/about.html" class="link-underline text-[19px]">About Us</a>
-                <a href="/services.html" class="link-underline text-[19px]">Services</a>
-                <a href="/view.html" class="link-underline text-[19px]">Views</a>
+            <nav class="z-50 hidden lg:flex gap-12 uppercase text-sm tracking-wide">
+                <a href="index.html" class="link-underline link-underline-active  text-[19px]">Home</a>
+                <a href="about.html" class="link-underline text-[19px]">About Us</a>
+                <a href="services.html" class="link-underline text-[19px]">Services</a>
+                <a href="view.html" class="link-underline text-[19px]">Views</a>
             </nav>
-            <img src="./assets/svg/logo.svg" alt="CYCG" class="z-50 h-12 lg:h-16 lg:mr-20" />
-            <div class="hidden lg:flex items-center gap-4 text-[#EBEBEB]">
-                <span class="z-50 uppercase text-[19px] text-[rgba(235, 235, 235, 1)]">
-                    Connect with us
-                </span>
+            <a class="z-50" href="index.html"><img src="./assets/svg/logo.svg"  alt="CYCG" class="z-50 h-12 lg:h-16 lg:mr-20" /></a>
+            <div class="hidden min-[768px]:hidden max-[1120px]:hidden  lg:flex items-center gap-4 text-[#EBEBEB]">
+                <nav class="z-50">
+                    <a href="./contact.html "
+                        class="z-50 uppercase link-underline cursor-pointer text-[19px] text-[rgba(235, 235, 235, 1)]">Connect
+                        with us</a>
+                </nav>
                 <div class="z-50 flex items-center gap-3">
                     <img src="./assets/svg/linkedin.svg" alt="linkedin" class="w-8 h-8 cursor-poniter">
                     <img src="./assets/svg/insta.svg" alt="instagram" class="w-8 h-8 cursor-poniter">
@@ -51,10 +101,12 @@
                     </svg>
                 </button>
                 <nav class="flex flex-col items-center justify-center h-full gap-8">
-                    <a href="/index.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Home</a>
-                    <a href="/about.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">About Us</a>
-                    <a href="/services.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Services</a>
-                    <a href="/view.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Views</a>
+                    <a href="index.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Home</a>
+                    <a href="about.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">About
+                        Us</a>
+                    <a href="services.html"
+                        class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Services</a>
+                    <a href="view.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Views</a>
                 </nav>
             </div>
         </div>
@@ -69,7 +121,7 @@
         <div class="absolute inset-0 z-0 bg-[rgba(26,26,26,0.5)]"></div>
         <div class="relative z-20 min-h-screen max-w-[1320px] px-4 md:px-0 pb-20 md:pb-0 flex items-center mx-auto">
             <h1
-                class="z-40 font-kiona text-white text-2xl text-[8vh] mt-auto md:text-[10.2vh] md:mt-28 leading-[90%] font-[400]">
+                class="z-40 font-kiona text-white text-[55px] text-[8vh] mt-auto md:text-[10.2vh] md:mt-28 leading-[90%] font-[400]">
                 UNLOCKING BUSINESS<br />
                 <span class="font-kiona fx-word">POTENTIAL</span> THROUGH<br />
                 TAILORED SOLUTIONS
@@ -221,7 +273,7 @@
                 </div>
                 <div class="flex w-full md:w-3/4 flex-col  text-[#EBEBEB]">
                     <div
-                        class="py-4 md:py-8 border-b-2 border-[#2E2E2E]   text-xs md:text-lg text-[rgba(235, 235, 235, 1)]  flex text-center justify-center gap-3 md:gap-8">
+                        class="py-4 md:py-8 border-b-2 border-[#2E2E2E]   text-xs md:text-lg text-[rgba(235, 235, 235, 1)]  flex text-center justify-center gap-3 md:gap-7">
                         <a href="index.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">Home</a>
                         <a href="about.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">About Us</a>
                         <a href="services.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">Services</a>
@@ -230,9 +282,9 @@
                     </div>
                     <div class="my-3 md:py-8  flex items-center gap-4 text-[#EBEBEB] justify-center ">
 
-                        <span class="z-50 uppercase  text-sm md:text-lg text-[rgba(235, 235, 235, 1)]">
+                        <a href="./contact.html" class="z-50 uppercase  text-sm md:text-lg text-[rgba(235, 235, 235, 1)]">
                             Connect with us
-                        </span>
+                        </a>
 
                         <div class="z-50 flex items-center gap-3">
                             <img src="./assets/svg/linkedin.svg" alt="linkedin" class="w-8 h-8 cursor-poniter">

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CYCG | About Us</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/svg/logo.svg" />
     <link href="./output.css" rel="stylesheet">
 </head>
 
@@ -12,52 +13,62 @@
 
     <header class="fixed top-0 left-0 w-full z-50">
         <div
-            class="absolute z-0 top-0 left-0 w-full h-[128px] z-10 bg-[linear-gradient(180deg,#080808_0%,rgba(8,8,8,0.5)_50%,rgba(8,8,8,0)_100%)]">
-        </div>
-        <div class="z-50 max-w-[1920px] mx-auto py-6 px-4 lg:px-20 flex items-center justify-between text-white">
-            <nav class="z-50 hidden lg:flex gap-12 uppercase text-sm tracking-wide ">
-                 <a href="/index.html" class="link-underline text-[19px]">Home</a>
-                <a href="/about.html" class="link-underline link-underline-active text-[19px]">About Us</a>
-                <a href="/services.html" class="link-underline text-[19px]">Services</a>
-                <a href="/view.html" class="link-underline text-[19px]">Views</a>
+        class="absolute top-0 left-0 w-full h-[128px] z-10 bg-[linear-gradient(180deg,#080808_0%,rgba(8,8,8,0.5)_50%,rgba(8,8,8,0)_100%)]">
+    </div>
+    <div class="z-50 max-w-[1920px] mx-auto py-6 px-4 lg:px-20 flex items-center justify-between text-white">
+        <nav class="z-50 hidden lg:flex gap-12 uppercase text-sm tracking-wide">
+            <a href="index.html" class="link-underline text-[19px]">Home</a>
+            <a href="about.html" class="link-underline link-underline-active text-[19px]">About Us</a>
+            <a href="services.html" class="link-underline text-[19px]">Services</a>
+            <a href="view.html" class="link-underline  text-[19px]">Views</a>
+        </nav>
+        <a class="z-50" href="index.html"><img src="./assets/svg/logo.svg"  alt="CYCG" class="z-50 h-12 lg:h-16 lg:mr-20" /></a>
+        <div class="hidden lg:flex items-center gap-4 text-[#EBEBEB]">
+            <nav class="z-50">
+                <a href="./contact.html "
+                    class="z-50 uppercase link-underline cursor-pointer text-[19px] text-[rgba(235, 235, 235, 1)]">Connect
+                    with us</a>
             </nav>
-            <img src="./assets/svg/logo.svg" alt="CYCG" class="z-50 h-12 lg:h-16 lg:mr-20" />
-            <div class="hidden lg:flex items-center gap-4 text-[#EBEBEB]">
-                <span class="z-50 uppercase text-[19px] text-[rgba(235, 235, 235, 1)]">
-                    Connect with us
-                </span>
-                <div class="z-50 flex items-center gap-3">
-                    <img src="./assets/svg/linkedin.svg" alt="linkedin" class="w-8 h-8 cursor-poniter">
-                    <img src="./assets/svg/insta.svg" alt="instagram" class="w-8 h-8 cursor-poniter">
-                    <img src="./assets/svg/mail.svg" alt="email" class="w-8 h-8 cursor-poniter">
-                </div>
+            <div class="z-50 flex items-center gap-3">
+                <img src="./assets/svg/linkedin.svg" alt="linkedin" class="w-8 h-8 cursor-poniter">
+                <img src="./assets/svg/insta.svg" alt="instagram" class="w-8 h-8 cursor-poniter">
+                <img src="./assets/svg/mail.svg" alt="email" class="w-8 h-8 cursor-poniter">
             </div>
-            <button id="mobile-menu-btn" class="lg:hidden z-50 flex flex-col gap-1.5 w-8 h-8 justify-center items-center cursor-pointer" aria-label="Toggle menu">
-                <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
-                <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
-                <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+        </div>
+        <button id="mobile-menu-btn"
+            class="lg:hidden z-50 flex flex-col gap-1.5 w-8 h-8 justify-center items-center cursor-pointer"
+            aria-label="Toggle menu">
+            <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+            <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+            <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+        </button>
+    </div>
+    <div id="mobile-menu"
+        class="fixed inset-0 z-[100] bg-[#080808] transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
+        <div class="relative w-full h-full">
+            <button id="mobile-menu-close"
+                class="absolute top-6 right-4 z-[101] w-8 h-8 flex items-center justify-center cursor-pointer"
+                aria-label="Close menu">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
             </button>
+            <nav class="flex flex-col items-center justify-center h-full gap-8">
+                <a href="index.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Home</a>
+                <a href="about.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">About
+                    Us</a>
+                <a href="services.html"
+                    class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Services</a>
+                <a href="view.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Views</a>
+            </nav>
         </div>
-        <div id="mobile-menu" class="fixed inset-0 z-[100] bg-[#080808] transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
-            <div class="relative w-full h-full">
-                <button id="mobile-menu-close" class="absolute top-6 right-4 z-[101] w-8 h-8 flex items-center justify-center cursor-pointer" aria-label="Close menu">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
-                </button>
-                <nav class="flex flex-col items-center justify-center h-full gap-8">
-                    <a href="/index.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Home</a>
-                    <a href="/about.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">About Us</a>
-                    <a href="/services.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Services</a>
-                    <a href="/view.html" class="mobile-nav-link text-white uppercase text-2xl tracking-wide">Views</a>
-                </nav>
-            </div>
-        </div>
+    </div>
     </header>
 
     <div
         class="fixed bottom-4 right-4 z-[9999] rounded-full flex items-center justify-center bg-[#1E1E1E]/20 backdrop-blur-sm">
-        <img src="./assets/svg/chat.svg" alt="chat icon" class="ml-2 mt-2 h-12">
+        <img src="./assets/svg/chat.svg" alt="chat icon" class="ml-2 mt-2 h-14 md:h-16">
     </div>
 
     <main class="">
@@ -66,7 +77,7 @@
             <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10"></div>
             <div class="max-w-[1320px] mx-auto relative z-20  mx-auto  flex flex-col justify-end pb-7 md:pb-24 h-full">
                 <h1
-                    class="font-kionasmall font-[400] uppercase text-[56px] lg:text-[100px] leading-[90%] px-6 md:px-0 tracking-[0] text-white">
+                    class="font-kionasmall font-[400] uppercase text-[56px] lg:text-[100px] leading-[90%] px-6 min-[768px]:px-6 max-[1120px]:px-6 md:px-0 tracking-[0] text-white">
                     About Us
                 </h1>
             </div>
@@ -195,7 +206,7 @@
                 </p>
             </div>
         </section>  
-        <section class="relative px-[16px] py-[40px] md:pb-[120px] md:pt-[120px] overflow-hidden bg-layout">
+        <section class="relative px-[16px] py-[40px] md:pb-[120px] md:pt-[120px] overflow-hidden bg-layout-rev">
             <div class="w-full max-w-[1320px] mx-auto relative z-10">
                 <h2 class="font-kionasmall  font-normal text-center uppercase text-[28px] leading-[90%] sm:text-[40px] md:text-[56px] lg:text-[64px] tracking-normal text-white mb-10">
                     WHERE ENTERPRISE EXPERTISE, 
@@ -206,8 +217,112 @@
                 <p class="text-[#EBEBEB] text-[16px] px-1 md:text-[20px] lg:text-[24px] leading-[140%] text-center mb-10">
                     We partner with leaders to navigate complexity, unlock performance, and deliver <br/> measurable outcomes that <br class="hidden md:flex"/>matter.
                 </p>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6 ">
-                    <div class="feature-card feature-card-active bg-[#111111] rounded-[24px] p-6 border transition-all duration-300 border border-[#333333]" >
+                <!-- Mobile/Tablet: Horizontal scroll -->
+                <div class="lg:hidden overflow-x-auto pb-4 -mx-6 px-6 scrollbar-hide mb-6">
+                    <div class="flex gap-6 min-w-max">
+                        <div class="feature-card feature-card-active bg-[#111111] rounded-[24px] p-6 border transition-all duration-300 border border-[#333333] flex-shrink-0 w-[380px] sm:w-[400px]">
+                            <div class="flex flex-col gap-6">
+                                <div class="flex justify-start">
+                                    <img src="./assets/svg/ab-light-icon.svg" alt="Enterprise Level Expertise" class="w-[72px] h-[72px]">
+                                </div>
+                                <h3 class="font-inter font-bold text-white text-[24px] leading-[1.3] text-left">
+                                    Enterprise Level Expertise
+                                </h3>
+                                <p class="font-inter font-normal text-white text-[16px] leading-[1.5] text-left">
+                                    Trusted by boards, C-suite executive, and high-growth teams, We bring an enterprise lens that aligns strategy with governance, risk, and growth priorities-so recommendations translate into action.
+                                </p>
+                                <ul class="flex flex-col gap-3 text-white text-[16px] leading-[1.5]">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-white mt-1">•</span>
+                                        <span>Board-ready insights and clear decision paths</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-white mt-1">•</span>
+                                        <span>Operator-minded execution support</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-white mt-1">•</span>
+                                        <span>Measured impact across people, process, and tech</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feature-card bg-[#111111] rounded-[24px] p-6 border transition-all duration-300 border border-[#333333] flex-shrink-0 w-[380px] sm:w-[400px]">
+                            <div class="flex flex-col gap-6">
+                                <div class="flex justify-left">
+                                    <img src="./assets/svg/ab-target-icon.svg" alt="Results Driven Approach" class="w-[72px] h-[72px]">
+                                </div>
+                                <h3 class="font-inter font-bold text-white text-[24px] leading-[1.3] text-left">
+                                    Results Driven Approach
+                                </h3>
+                                <p class="font-inter font-normal text-white text-[16px] leading-[1.5] text-left">
+                                    Every organization is unique. We tailor engagements to your goals and constraints, focusing on outcomes you can measure and momentum you can sustain.
+                                </p>
+                                <ul class="flex flex-col gap-3 text-white text-[16px] leading-[1.5]">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-white mt-1">•</span>
+                                        <span>Clarity on success metrics and <br> ownership</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-white mt-1">•</span>
+                                        <span>Roadmaps that de-risk change and <br/> accelerate value</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-white mt-1">•</span>
+                                        <span>Operational uplift and performance gains</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="feature-card bg-[#111111] rounded-[24px] p-6 border transition-all duration-300 border border-[#333333] flex-shrink-0 w-[380px] sm:w-[400px]">
+                            <div class="flex flex-col gap-6">
+                                <div class="flex justify-left">
+                                    <img src="./assets/svg/ab-trad-icon.svg" alt="Future Ready Strategies" class="w-[72px] h-[72px]">
+                                </div>
+                                <h3 class="font-inter font-bold text-white text-[24px] leading-[1.3] text-left">
+                                    Future Ready Strategies
+                                </h3>
+                                <p class="font-inter font-normal text-white text-[16px] leading-[1.5] text-left">
+                                    Adaptability is advantage. We build resilient, scalable strategies that keep you ahead of disruption and ready for what's next.
+                                </p>
+                                <ul class="flex flex-col gap-3 text-white text-[16px] leading-[1.5]">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-white mt-1">•</span>
+                                        <span>Scenario planning and risk-aware design</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-white mt-1">•</span>
+                                        <span>Agile operating models and capability<br/> build</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-white mt-1">•</span>
+                                        <span>Sustainable, long-term value creation</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 4th Card: Our Commitment (only visible in horizontal scroll) -->
+                        <div class="bg-[#111111] rounded-[24px] p-6 border border-[#333333] flex-shrink-0 w-[380px] sm:w-[400px]">
+                            <div class="flex flex-col md:flex-row items-start justify-start gap-6">
+                                <div class="flex justify-left">
+                                    <img src="./assets/svg/ab-health-icon.svg" alt="Our Commitment" class="w-[72px] h-[72px]">
+                                </div>
+                                <div class="flex flex-col gap-3">
+                                    <h3 class="font-inter font-bold text-white text-[24px] leading-[1.3] text-left">
+                                        Our Commitment
+                                    </h3>
+                                    <p class="font-inter font-normal text-white text-[16px] leading-[1.5] text-left">
+                                        We don't just consult—we partner. Expect integrity, clarity, and a relentless focus on results as we turn today's challenges into tomorrow's growth opportunities.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Desktop: Grid layout -->
+                <div class="hidden lg:grid grid-cols-3 gap-6 mb-6">
+                    <div class="feature-card feature-card-active bg-[#111111] rounded-[24px] p-6 border transition-all duration-300 border border-[#333333]">
                         <div class="flex flex-col gap-6">
                             <div class="flex justify-start">
                                 <img src="./assets/svg/ab-light-icon.svg" alt="Enterprise Level Expertise" class="w-[72px] h-[72px]">
@@ -234,7 +349,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="feature-card bg-[#111111] rounded-[24px] p-6 border transition-all duration-300 border border-[#333333]" >
+                    <div class="feature-card bg-[#111111] rounded-[24px] p-6 border transition-all duration-300 border border-[#333333]">
                         <div class="flex flex-col gap-6">
                             <div class="flex justify-left">
                                 <img src="./assets/svg/ab-target-icon.svg" alt="Results Driven Approach" class="w-[72px] h-[72px]">
@@ -261,7 +376,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="feature-card bg-[#111111] rounded-[24px] p-6 border transition-all duration-300 border border-[#333333]" >
+                    <div class="feature-card bg-[#111111] rounded-[24px] p-6 border transition-all duration-300 border border-[#333333]">
                         <div class="flex flex-col gap-6">
                             <div class="flex justify-left">
                                 <img src="./assets/svg/ab-trad-icon.svg" alt="Future Ready Strategies" class="w-[72px] h-[72px]">
@@ -289,7 +404,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-[#111111] rounded-[24px] p-6 md:p-8 border max-w-full mx-auto border border-[#333333]" >
+                <!-- Our Commitment card for desktop only (below grid) -->
+                <div class="hidden lg:block bg-[#111111] rounded-[24px] p-6 md:p-8 border max-w-full mx-auto border border-[#333333] mt-6">
                     <div class="flex  items-start justify-start gap-6">
                         <div class="flex justify-left">
                             <img src="./assets/svg/ab-health-icon.svg" alt="Our Commitment" class="w-[72px] h-[72px]">
@@ -327,14 +443,14 @@
                         <div class="md:hidden my-4">
                             <h3 class="font-inter font-bold text-white text-[24px] md:text-[28px] leading-[1.3] mb-2">
                                 Christian B. Young
-                            </h3>
+                            </h3><br/>
                             <p class="font-inter font-normal text-white text-[18px] md:text-[20px] leading-[1.5]">
                                 CEO CYCG
                             </p>
                         </div>
                     </div>
-                <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start ">
-                    <div class="flex-1 max-w-full lg:max-w-[85%]">
+                <div class="flex flex-col lg:flex-row gap-0 items-start ">
+                    <div class="flex-1 max-w-full md:max-w-[848px]">
                         <div class="flex flex-col gap-6 pr-0 md:pr-10">
                             <p class="font-inter font-normal text-white text-[16px] md:text-[24px] leading-[1.6]">
                                 CYCG is led by Christian B. Young, a strategist with over 20 years of experience in business strategy, operations, and risk management. She has worked with boards, C-suite leaders, and cross-functional teams worldwide to deliver transformation and measurable impact.
@@ -347,24 +463,22 @@
                                 Christian leads CYCG with integrity, collaboration, and purpose: equipping leaders and organizations with the tools to adapt, grow, and succeed in a rapidly changing world.
                             </p>
                             
-                            <div class="hidden  md:flex mt-4">
-                                <h3 class="font-inter font-bold text-white text-[24px] md:text-[28px] leading-[1.3] mb-2">
+                            <div class="hidden  md:block mt-4">
+                                <div class="w-full font-inter font-bold text-white text-[24px] md:text-[28px] leading-[1.3] mb-4">
                                     Christian B. Young
-                                </h3>
-                                <p class="font-inter font-normal text-white text-[18px] md:text-[20px] leading-[1.5]">
-                                    CEO CYCG
-                                </p>
+                                </div>
+                                <div class="w-full font-inter font-normal text-white text-[18px] md:text-[20px] leading-[1.5] mt-2">
+                                   CEO CYCG
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Right Column: Image -->
-                    <div class="hidden md:flex-1 lg:max-w-[30%]  flex justify-center ">
+                    <div class="hidden md:block flex-1 md:max-w-[38%]  flex justify-center ">
                         <div class="relative">
                             <img 
                                 src="./assets/img/women-about.webp" 
                                 alt="Christian B. Young, CEO CYCG" 
-                                class="w-full max-w-[400px] lg:max-w-[580px] min-w-[580px] rounded-[32px] object-cover"
+                                class="w-full max-w-[3600px] min-w-[580px] rounded-[32px] object-cover"
                                 style="border-radius: 32px; "
                             >
                         </div>
@@ -443,7 +557,7 @@
                     </div>
                 </div>
                 <div class="flex w-full md:w-3/4 flex-col text-[#EBEBEB]">
-                    <div class="py-4 md:py-8 border-b-2 border-[#2E2E2E] text-xs md:text-lg text-[rgba(235, 235, 235, 1)] flex text-center justify-center gap-3 md:gap-8">
+                    <div class="py-4 md:py-8 border-b-2 border-[#2E2E2E] text-xs md:text-lg text-[rgba(235, 235, 235, 1)] flex text-center justify-center gap-3 md:gap-7">
                         <a href="index.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">Home</a>
                         <a href="about.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">About Us</a>
                         <a href="services.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">Services</a>
@@ -451,9 +565,9 @@
                         <a href="privacy.html" class="text-[#EBEBEB] cursor-pointer hover:text-white">Privacy Policy</a>
                     </div>
                     <div class="my-3 md:py-8 flex items-center gap-4 text-[#EBEBEB] justify-center">
-                        <span class="z-50 uppercase text-sm md:text-lg text-[rgba(235, 235, 235, 1)]">
+                        <a href="./contact.html" class="z-50 uppercase  text-sm md:text-lg text-[rgba(235, 235, 235, 1)]">
                             Connect with us
-                        </span>
+                        </a>
                         <div class="z-50 flex items-center gap-3">
                             <img src="./assets/svg/linkedin.svg" alt="linkedin" class="w-8 h-8 cursor-poniter">
                             <img src="./assets/svg/insta.svg" alt="instagram" class="w-8 h-8 cursor-poniter">
