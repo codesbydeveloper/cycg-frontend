@@ -105,21 +105,4 @@
     if (e.key === 'Escape' && isOpen) closeDropdown();
   });
 
-  window.addEventListener('DOMContentLoaded', function () {
-    if (window.location.hash === '#open') {
-      if (!isCloned) {
-        const clone = source.cloneNode(true);
-        clone.classList.remove('hidden');
-        clone.id = '';
-        const closeBtn = clone.querySelector('#views-close-btn');
-        if (closeBtn) {
-          closeBtn.id = '';
-          closeBtn.addEventListener('click', closeDropdown);
-        }
-        dropdown.appendChild(clone);
-        isCloned = true;
-      }
-      setTimeout(openDropdown, 50);
-    }
-  });
 })();
